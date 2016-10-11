@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/OneDrive/Documents/ComputerDesign1/AudioProcessor.xst" -ofn "E:/OneDrive/Documents/ComputerDesign1/AudioProcessor.syr" 

@@ -1,0 +1,452 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.28 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.28 secs
+ 
+--> Reading design: NewVgaController.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "NewVgaController.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "NewVgaController"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : NewVgaController
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\OneDrive\Documents\ComputerDesign1\NewVgaController.v" into library work
+Parsing module <NewVgaController>.
+Parsing module <Painter>.
+Parsing module <VgaTimer>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <NewVgaController>.
+
+Elaborating module <VgaTimer>.
+
+Elaborating module <Painter>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <NewVgaController>.
+    Related source file is "E:\OneDrive\Documents\ComputerDesign1\NewVgaController.v".
+    Summary:
+	no macro.
+Unit <NewVgaController> synthesized.
+
+Synthesizing Unit <VgaTimer>.
+    Related source file is "E:\OneDrive\Documents\ComputerDesign1\NewVgaController.v".
+        hFrontPorch = 16
+        hVisible = 656
+        hBackPorch = 704
+        syncPulse = 800
+        horizontalRes = 640
+        vHighPulse = 523
+        vLowPulse = 525
+        verticalRes = 480
+    Found 1-bit register for signal <isActive>.
+    Found 10-bit register for signal <hsCount>.
+    Found 10-bit register for signal <hPix>.
+    Found 1-bit register for signal <pixIncremented>.
+    Found 9-bit register for signal <vPix>.
+    Found 1-bit register for signal <VS>.
+    Found 10-bit register for signal <vsCount>.
+    Found 2-bit register for signal <clkCount>.
+    Found 1-bit register for signal <HS>.
+    Found 9-bit adder for signal <vPix[8]_GND_2_o_add_12_OUT> created at line 116.
+    Found 10-bit adder for signal <hPix[9]_GND_2_o_add_14_OUT> created at line 119.
+    Found 10-bit adder for signal <hsCount[9]_GND_2_o_add_20_OUT> created at line 126.
+    Found 10-bit adder for signal <vsCount[9]_GND_2_o_add_31_OUT> created at line 149.
+    Found 2-bit adder for signal <clkCount[1]_GND_2_o_add_50_OUT> created at line 159.
+    Found 10-bit comparator greater for signal <n0001> created at line 95
+    Found 10-bit comparator lessequal for signal <n0003> created at line 100
+    Found 10-bit comparator lessequal for signal <n0005> created at line 100
+    Found 10-bit comparator lessequal for signal <n0008> created at line 105
+    Found 10-bit comparator lessequal for signal <n0010> created at line 105
+    Found 10-bit comparator lessequal for signal <n0025> created at line 123
+    Found 10-bit comparator lessequal for signal <n0027> created at line 123
+    Found 10-bit comparator greater for signal <n0031> created at line 135
+    Found 10-bit comparator lessequal for signal <n0033> created at line 139
+    Found 10-bit comparator lessequal for signal <n0035> created at line 139
+    Found 10-bit comparator lessequal for signal <n0038> created at line 143
+    Found 10-bit comparator lessequal for signal <n0040> created at line 143
+    Found 10-bit comparator lessequal for signal <n0043> created at line 147
+    Found 10-bit comparator lessequal for signal <n0045> created at line 147
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred  45 D-type flip-flop(s).
+	inferred  14 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <VgaTimer> synthesized.
+
+Synthesizing Unit <Painter>.
+    Related source file is "E:\OneDrive\Documents\ComputerDesign1\NewVgaController.v".
+WARNING:Xst:647 - Input <hPix<4:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <hPix<9:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <vPix<4:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <vPix<8:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <Painter> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 5
+ 10-bit adder                                          : 3
+ 2-bit adder                                           : 1
+ 9-bit adder                                           : 1
+# Registers                                            : 9
+ 1-bit register                                        : 4
+ 10-bit register                                       : 3
+ 2-bit register                                        : 1
+ 9-bit register                                        : 1
+# Comparators                                          : 14
+ 10-bit comparator greater                             : 2
+ 10-bit comparator lessequal                           : 12
+# Multiplexers                                         : 6
+ 1-bit 2-to-1 multiplexer                              : 4
+ 2-bit 2-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <VgaTimer>.
+The following registers are absorbed into counter <clkCount>: 1 register on signal <clkCount>.
+The following registers are absorbed into counter <hsCount>: 1 register on signal <hsCount>.
+The following registers are absorbed into counter <hPix>: 1 register on signal <hPix>.
+The following registers are absorbed into counter <vPix>: 1 register on signal <vPix>.
+The following registers are absorbed into counter <vsCount>: 1 register on signal <vsCount>.
+Unit <VgaTimer> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 5
+ 10-bit up counter                                     : 3
+ 2-bit up counter                                      : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+# Comparators                                          : 14
+ 10-bit comparator greater                             : 2
+ 10-bit comparator lessequal                           : 12
+# Multiplexers                                         : 6
+ 1-bit 2-to-1 multiplexer                              : 4
+ 2-bit 2-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <NewVgaController> ...
+
+Optimizing unit <VgaTimer> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block NewVgaController, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 45
+ Flip-Flops                                            : 45
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : NewVgaController.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 165
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 35
+#      LUT2                        : 6
+#      LUT3                        : 5
+#      LUT4                        : 2
+#      LUT5                        : 15
+#      LUT6                        : 21
+#      MUXCY                       : 35
+#      VCC                         : 1
+#      XORCY                       : 39
+# FlipFlops/Latches                : 45
+#      FD                          : 22
+#      FDR                         : 2
+#      FDRE                        : 20
+#      FDSE                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 10
+#      OBUF                        : 10
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              45  out of  18224     0%  
+ Number of Slice LUTs:                   89  out of   9112     0%  
+    Number used as Logic:                89  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     89
+   Number with an unused Flip Flop:      44  out of     89    49%  
+   Number with an unused LUT:             0  out of     89     0%  
+   Number of fully used LUT-FF pairs:    45  out of     89    50%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                          11
+ Number of bonded IOBs:                  11  out of    232     4%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 45    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.737ns (Maximum Frequency: 211.095MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.849ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.737ns (frequency: 211.095MHz)
+  Total number of paths / destination ports: 1190 / 89
+-------------------------------------------------------------------------
+Delay:               4.737ns (Levels of Logic = 4)
+  Source:            t/hPix_4 (FF)
+  Destination:       t/pixIncremented (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: t/hPix_4 to t/pixIncremented
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   1.015  t/hPix_4 (t/hPix_4)
+     LUT6:I0->O            1   0.203   0.580  t/GND_2_o_pixIncremented_AND_3_o_SW0 (N12)
+     LUT6:I5->O           20   0.205   1.197  t/GND_2_o_pixIncremented_AND_3_o (t/GND_2_o_pixIncremented_AND_3_o)
+     LUT4:I2->O            1   0.203   0.580  t/pixIncremented_glue_set (t/pixIncremented_glue_set)
+     LUT6:I5->O            1   0.205   0.000  t/pixIncremented_rstpot (t/pixIncremented_rstpot)
+     FD:D                      0.102          t/pixIncremented
+    ----------------------------------------
+    Total                      4.737ns (1.365ns logic, 3.372ns route)
+                                       (28.8% logic, 71.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 20 / 10
+-------------------------------------------------------------------------
+Offset:              4.849ns (Levels of Logic = 2)
+  Source:            t/isActive (FF)
+  Destination:       green<2> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: t/isActive to green<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             4   0.447   0.912  t/isActive (t/isActive)
+     LUT3:I0->O            5   0.205   0.714  blue<1>1 (blue_1_OBUF)
+     OBUF:I->O                 2.571          green_2_OBUF (green<2>)
+    ----------------------------------------
+    Total                      4.849ns (3.223ns logic, 1.626ns route)
+                                       (66.5% logic, 33.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.737|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.33 secs
+ 
+--> 
+
+Total memory usage is 278908 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

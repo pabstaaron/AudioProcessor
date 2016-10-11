@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "E:/OneDrive/Documents/ComputerDesign1/NewVgaController.xst" -ofn "E:/OneDrive/Documents/ComputerDesign1/NewVgaController.syr" 
+xst -intstyle ise -ifn "E:/OneDrive/Documents/ComputerDesign1/NewVgaController.xst" -ofn "E:/OneDrive/Documents/ComputerDesign1/NewVgaController.syr" 
+xst -intstyle ise -ifn "E:/OneDrive/Documents/ComputerDesign1/NewVgaController.xst" -ofn "E:/OneDrive/Documents/ComputerDesign1/NewVgaController.syr" 
+xst -intstyle ise -ifn "E:/OneDrive/Documents/ComputerDesign1/NewVgaController.xst" -ofn "E:/OneDrive/Documents/ComputerDesign1/NewVgaController.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -bm VgaControllerSim.bmm -p xc6slx16-csg324-3 NewVgaController.ngc NewVgaController.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o NewVgaController_map.ncd NewVgaController.ngd NewVgaController.pcf 
+par -w -intstyle ise -ol high -mt off NewVgaController_map.ncd NewVgaController.ncd NewVgaController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml NewVgaController.twx NewVgaController.ncd -o NewVgaController.twr NewVgaController.pcf 
+bitgen -intstyle ise -f NewVgaController.ut NewVgaController.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc NewVgaController.ucf -bm VgaControllerSim.bmm -p xc6slx16-csg324-3 NewVgaController.ngc NewVgaController.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o NewVgaController_map.ncd NewVgaController.ngd NewVgaController.pcf 
+par -w -intstyle ise -ol high -mt off NewVgaController_map.ncd NewVgaController.ncd NewVgaController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml NewVgaController.twx NewVgaController.ncd -o NewVgaController.twr NewVgaController.pcf -ucf NewVgaController.ucf 
+bitgen -intstyle ise -f NewVgaController.ut NewVgaController.ncd 

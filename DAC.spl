@@ -1,0 +1,10 @@
+[Inputs]
+CLK
+=MISO[16:0]=
+[Outputs]
+SCK
+=MOSI[16:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel DAC
+

@@ -1,0 +1,3 @@
+verilog work "ipcore_dir/FFT.v"
+verilog work "DAC.v"
+verilog work "AudioProcessor.vf"

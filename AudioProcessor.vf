@@ -1,0 +1,49 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : AudioProcessor.vf
+// /___/   /\     Timestamp : 10/10/2016 19:45:27
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath E:/OneDrive/Documents/ComputerDesign1/ipcore_dir -intstyle ise -family spartan6 -verilog E:/OneDrive/Documents/ComputerDesign1/AudioProcessor.vf -w E:/OneDrive/Documents/ComputerDesign1/AudioProcessor.sch
+//Design Name: AudioProcessor
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module AudioProcessor();
+
+   
+   
+   FFT  XLXI_1 (.aclk(), 
+               .m_axis_data_tready(), 
+               .s_axis_config_tdata(), 
+               .s_axis_config_tvalid(), 
+               .s_axis_data_tdata(), 
+               .s_axis_data_tlast(), 
+               .s_axis_data_tvalid(), 
+               .event_data_in_channel_halt(), 
+               .event_data_out_channel_halt(), 
+               .event_frame_started(), 
+               .event_status_channel_halt(), 
+               .event_tlast_missing(), 
+               .event_tlast_unexpected(), 
+               .m_axis_data_tdata(), 
+               .m_axis_data_tlast(), 
+               .m_axis_data_tvalid(), 
+               .s_axis_config_tready(), 
+               .s_axis_data_tready());
+   DAC  XLXI_4 (.CLK(), 
+               .MISO(), 
+               .MOSI(), 
+               .SCK());
+endmodule

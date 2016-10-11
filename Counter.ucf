@@ -1,0 +1,44 @@
+#
+#
+#NET "rawCount[0]" LOC = U16;
+#NET "rawCount[1]" LOC = V16;
+#NET "rawCount[2]" LOC = U15;
+#NET "rawCount[3]" LOC = V15;
+#NET "rawCount[4]" LOC = M11;
+#NET "rawCount[5]" LOC = N11;
+#NET "rawCount[6]" LOC = R11;
+#NET "rawCount[7]" LOC = T11;
+NET "clk" LOC = V10;
+#NET "in" LOC = B8;
+#NET "reset" LOC = C9;
+#NET "segA" LOC = T17;
+#NET "segB" LOC = T18;
+#NET "segC" LOC = U17;
+#NET "segD" LOC = U18;
+#NET "segE" LOC = M14;
+#NET "segF" LOC = N14;
+#NET "segG" LOC = L14;
+#NET "an0" LOC = N16;
+#NET "an1" LOC = N15;
+#NET "an2" LOC = P18;
+#NET "an3" LOC = P17;
+#NET "scaledClk" LOC = A9;
+#
+#
+#NET "dispSelect" LOC = T10;
+#
+#
+#NET "segDp" LOC = M13;
+
+# PlanAhead Generated physical constraints 
+
+NET "blue[0]" LOC = R7;
+NET "blue[1]" LOC = T7;
+NET "green[0]" LOC = P8;
+NET "green[1]" LOC = T6;
+NET "green[2]" LOC = V6;
+NET "red[0]" LOC = U7;
+NET "red[1]" LOC = V7;
+NET "red[2]" LOC = N7;
+NET "HS" LOC = N6;
+NET "VS" LOC = P7;

@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="443" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\c_mux_bit_v11_0\c_mux_bit_v11_0_xst.vhd" Line 249: Function <arg fmt="%s" index="1">fn_use_reg_sync_ctrls</arg> does not always return a value.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="443" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\c_shift_ram_v11_0\c_shift_ram_v11_0_legacy.vhd" Line 424: Function <arg fmt="%s" index="1">get_init</arg> does not always return a value.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="321" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xbip_utils_v2_0\bip_utils_pkg_v2_0.vhd" Line 1836: Comparison between arrays of unequal length always returns <arg fmt="%s" index="1">FALSE</arg>.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="321" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xbip_utils_v2_0\bip_utils_pkg_v2_0.vhd" Line 1842: Comparison between arrays of unequal length always returns <arg fmt="%s" index="1">FALSE</arg>.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="321" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xbip_utils_v2_0\bip_utils_pkg_v2_0.vhd" Line 1848: Comparison between arrays of unequal length always returns <arg fmt="%s" index="1">FALSE</arg>.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="321" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xbip_utils_v2_0\bip_utils_pkg_v2_0.vhd" Line 1849: Comparison between arrays of unequal length always returns <arg fmt="%s" index="1">FALSE</arg>.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="321" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xbip_utils_v2_0\bip_utils_pkg_v2_0.vhd" Line 1850: Comparison between arrays of unequal length always returns <arg fmt="%s" index="1">FALSE</arg>.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="321" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xbip_utils_v2_0\bip_utils_pkg_v2_0.vhd" Line 1851: Comparison between arrays of unequal length always returns <arg fmt="%s" index="1">FALSE</arg>.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="321" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xbip_utils_v2_0\bip_utils_pkg_v2_0.vhd" Line 1852: Comparison between arrays of unequal length always returns <arg fmt="%s" index="1">FALSE</arg>.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 980: <arg fmt="%s" index="1">config_fifo_out_nfft</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 981: <arg fmt="%s" index="1">config_fifo_out_cp_len</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 982: <arg fmt="%s" index="1">config_fifo_out_fwd_inv0</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 983: <arg fmt="%s" index="1">config_fifo_out_fwd_inv1</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 984: <arg fmt="%s" index="1">config_fifo_out_fwd_inv2</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 985: <arg fmt="%s" index="1">config_fifo_out_fwd_inv3</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 986: <arg fmt="%s" index="1">config_fifo_out_fwd_inv4</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 987: <arg fmt="%s" index="1">config_fifo_out_fwd_inv5</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 988: <arg fmt="%s" index="1">config_fifo_out_fwd_inv6</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 989: <arg fmt="%s" index="1">config_fifo_out_fwd_inv7</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 990: <arg fmt="%s" index="1">config_fifo_out_fwd_inv8</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 991: <arg fmt="%s" index="1">config_fifo_out_fwd_inv9</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 992: <arg fmt="%s" index="1">config_fifo_out_fwd_inv10</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 993: <arg fmt="%s" index="1">config_fifo_out_fwd_inv11</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 994: <arg fmt="%s" index="1">config_fifo_out_scale_sch0</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 995: <arg fmt="%s" index="1">config_fifo_out_scale_sch1</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 996: <arg fmt="%s" index="1">config_fifo_out_scale_sch2</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 997: <arg fmt="%s" index="1">config_fifo_out_scale_sch3</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 998: <arg fmt="%s" index="1">config_fifo_out_scale_sch4</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 999: <arg fmt="%s" index="1">config_fifo_out_scale_sch5</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 1000: <arg fmt="%s" index="1">config_fifo_out_scale_sch6</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 1001: <arg fmt="%s" index="1">config_fifo_out_scale_sch7</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 1002: <arg fmt="%s" index="1">config_fifo_out_scale_sch8</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 1003: <arg fmt="%s" index="1">config_fifo_out_scale_sch9</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 1004: <arg fmt="%s" index="1">config_fifo_out_scale_sch10</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 1005: <arg fmt="%s" index="1">config_fifo_out_scale_sch11</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 1111: <arg fmt="%s" index="1">data_in_tlast</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 1242: Assignment to <arg fmt="%s" index="1">new_config_without_nfft_change</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 2674: <arg fmt="%s" index="1">m_axis_data_tuser_int</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\xfft_v8_0_axi_pkg.vhd" Line 1308: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 418: Net &lt;<arg fmt="%s" index="1">last_config[17]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 422: Net &lt;<arg fmt="%s" index="1">use_last_config</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 426: Net &lt;<arg fmt="%s" index="1">config_fifo_out_cp_len[10]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 428: Net &lt;<arg fmt="%s" index="1">config_fifo_out_fwd_inv1</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 429: Net &lt;<arg fmt="%s" index="1">config_fifo_out_fwd_inv2</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 430: Net &lt;<arg fmt="%s" index="1">config_fifo_out_fwd_inv3</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 431: Net &lt;<arg fmt="%s" index="1">config_fifo_out_fwd_inv4</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 432: Net &lt;<arg fmt="%s" index="1">config_fifo_out_fwd_inv5</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 433: Net &lt;<arg fmt="%s" index="1">config_fifo_out_fwd_inv6</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 434: Net &lt;<arg fmt="%s" index="1">config_fifo_out_fwd_inv7</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 435: Net &lt;<arg fmt="%s" index="1">config_fifo_out_fwd_inv8</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 436: Net &lt;<arg fmt="%s" index="1">config_fifo_out_fwd_inv9</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 437: Net &lt;<arg fmt="%s" index="1">config_fifo_out_fwd_inv10</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 438: Net &lt;<arg fmt="%s" index="1">config_fifo_out_fwd_inv11</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 440: Net &lt;<arg fmt="%s" index="1">config_fifo_out_scale_sch1[11]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 441: Net &lt;<arg fmt="%s" index="1">config_fifo_out_scale_sch2[11]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 442: Net &lt;<arg fmt="%s" index="1">config_fifo_out_scale_sch3[11]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 443: Net &lt;<arg fmt="%s" index="1">config_fifo_out_scale_sch4[11]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 444: Net &lt;<arg fmt="%s" index="1">config_fifo_out_scale_sch5[11]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 445: Net &lt;<arg fmt="%s" index="1">config_fifo_out_scale_sch6[11]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 446: Net &lt;<arg fmt="%s" index="1">config_fifo_out_scale_sch7[11]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 447: Net &lt;<arg fmt="%s" index="1">config_fifo_out_scale_sch8[11]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 448: Net &lt;<arg fmt="%s" index="1">config_fifo_out_scale_sch9[11]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 449: Net &lt;<arg fmt="%s" index="1">config_fifo_out_scale_sch10[11]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 450: Net &lt;<arg fmt="%s" index="1">config_fifo_out_scale_sch11[11]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\axi_wrapper.vhd" Line 498: Net &lt;<arg fmt="%s" index="1">status_fifo_full</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\c_addsub_v11_0\c_addsub_pkg_v11_0.vhd" Line 505: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\c_addsub_v11_0\c_addsub_v11_0_legacy.vhd" Line 291: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\c_addsub_v11_0\c_addsub_v11_0_legacy.vhd" Line 292: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\c_addsub_v11_0\c_addsub_v11_0_legacy.vhd" Line 299: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\c_addsub_v11_0\c_addsub_v11_0_legacy.vhd" Line 301: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\c_addsub_v11_0\c_addsub_v11_0_legacy.vhd" Line 304: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\c_addsub_v11_0\c_addsub_v11_0_legacy.vhd" Line 308: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\c_addsub_v11_0\c_addsub_v11_0_legacy.vhd" Line 309: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\c_addsub_v11_0\c_addsub_v11_0_legacy.vhd" Line 313: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\c_addsub_v11_0\c_addsub_v11_0_legacy.vhd" Line 314: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\c_addsub_v11_0\c_addsub_v11_0_legacy.vhd" Line 282: Net &lt;<arg fmt="%s" index="1">c_in_i</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\c_addsub_v11_0\c_addsub_v11_0_xst.vhd" Line 244: Net &lt;<arg fmt="%s" index="1">i_baseblox.i_b_in</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\logic_gate.vhd" Line 117: Net &lt;<arg fmt="%s" index="1">i_i[5]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\c_addsub_v11_0\c_addsub_v11_0_base_legacy.vhd" Line 1090: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\equ_rtl.vhd" Line 85: Net &lt;<arg fmt="%s" index="1">a_i[11]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\equ_rtl.vhd" Line 86: Net &lt;<arg fmt="%s" index="1">b_i[11]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\shift_ram.vhd" Line 149: Net &lt;<arg fmt="%s" index="1">address[3]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\r22_flow_ctrl.vhd" Line 125: Net &lt;<arg fmt="%s" index="1">xk_load_i[10]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\r22_flow_ctrl.vhd" Line 151: Net &lt;<arg fmt="%s" index="1">rfs_cnt_en</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\r22_flow_ctrl.vhd" Line 153: Net &lt;<arg fmt="%s" index="1">rfs_done</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="552" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\shift_ram.vhd" Line 1114: Input port <arg fmt="%s" index="1">D1</arg> is not connected on this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\xfft_v8_0_d.vhd" Line 630: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="220" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\xfft_v8_0_d.vhd" Line 630: Assignment ignored
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\xfft_v8_0_d.vhd" Line 631: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="220" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\xfft_v8_0_d.vhd" Line 631: Assignment ignored
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\shift_ram.vhd" Line 260: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\dpm.vhd" Line 680: Assignment to <arg fmt="%s" index="1">ram_data_open</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\dpm.vhd" Line 683: Assignment to <arg fmt="%s" index="1">ram_parity_open</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xbip_utils_v2_0\bip_utils_pkg_v2_0.vhd" Line 499: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xbip_utils_v2_0\bip_utils_pkg_v2_0.vhd" Line 500: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="220" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xbip_utils_v2_0\bip_utils_pkg_v2_0.vhd" Line 502: Assignment ignored
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\dpm.vhd" Line 267: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="220" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\dpm.vhd" Line 267: Assignment ignored
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\r22_tw_gen.vhd" Line 98: Using initial value <arg fmt="%s" index="1">&quot;00000000000&quot;</arg> for <arg fmt="%s" index="2">gnd_vec</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\twiddle_gen.vhd" Line 84: Using initial value <arg fmt="%s" index="1">&quot;00000000000000000&quot;</arg> for <arg fmt="%s" index="2">dummy_d</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\cmpy_v3_0\cmpy_4_dsp48_mult.vhd" Line 6054: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="220" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\cmpy_v3_0\cmpy_4_dsp48_mult.vhd" Line 6054: Assignment ignored
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\cmpy_v3_0\cmpy_4_dsp48_mult.vhd" Line 6056: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="220" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\cmpy_v3_0\cmpy_4_dsp48_mult.vhd" Line 6056: Assignment ignored
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\cmpy_v3_0\cmpy_4_dsp48_mult.vhd" Line 6058: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="220" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\cmpy_v3_0\cmpy_4_dsp48_mult.vhd" Line 6058: Assignment ignored
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\cmpy_v3_0\cmpy_4_dsp48_mult.vhd" Line 6060: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="220" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\cmpy_v3_0\cmpy_4_dsp48_mult.vhd" Line 6060: Assignment ignored
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\cmpy_v3_0\cmpy_4_dsp48_mult.vhd" Line 6162: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="220" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\cmpy_v3_0\cmpy_4_dsp48_mult.vhd" Line 6162: Assignment ignored
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\cmpy_v3_0\cmpy_4_dsp48_mult.vhd" Line 6164: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="220" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\cmpy_v3_0\cmpy_4_dsp48_mult.vhd" Line 6164: Assignment ignored
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\cmpy_v3_0\cmpy_4_dsp48_mult.vhd" Line 6166: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="220" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\cmpy_v3_0\cmpy_4_dsp48_mult.vhd" Line 6166: Assignment ignored
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\cmpy_v3_0\cmpy_4_dsp48_mult.vhd" Line 6168: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="220" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\cmpy_v3_0\cmpy_4_dsp48_mult.vhd" Line 6168: Assignment ignored
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\cmpy_v3_0\cmpy_4_dsp48_mult.vhd" Line 6192: Using initial value <arg fmt="%s" index="1">&apos;0&apos;</arg> for <arg fmt="%s" index="2">ced_0</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\cmpy_v3_0\cmpy_4_dsp48_mult.vhd" Line 6195: Using initial value <arg fmt="%s" index="1">&apos;0&apos;</arg> for <arg fmt="%s" index="2">ce_carryin_1</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\cmpy_v3_0\cmpy_4_dsp48_mult.vhd" Line 3384: Net &lt;<arg fmt="%s" index="1">c[0][0][47]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\cmpy_v3_0\cmpy_4_dsp48_mult.vhd" Line 3385: Net &lt;<arg fmt="%s" index="1">cin[0][0][0]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\cmpy_v3_0\cmpy_4_dsp48_mult.vhd" Line 6191: Net &lt;<arg fmt="%s" index="1">use_DSP48a.appDSP48A[0].bppDSP48A[0].cec_0</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\cmpy_v3_0\cmpy_4_dsp48_mult.vhd" Line 6195: Net &lt;<arg fmt="%s" index="1">use_DSP48a.appDSP48A[0].bppDSP48A[0].ce_carryin_0</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\cmpy_v3_0\cmpy_4_dsp48.vhd" Line 122: Net &lt;<arg fmt="%s" index="1">im_pcascade_in[47]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\r22_bf_sp.vhd" Line 167: Using initial value <arg fmt="%s" index="1">&quot;000000000000000000000000000000000000000000000000&quot;</arg> for <arg fmt="%s" index="2">zeros</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\mux_bus2.vhd" Line 89: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\r22_pe.vhd" Line 192: Net &lt;<arg fmt="%s" index="1">bf2_out_re[17]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\r22_pe.vhd" Line 193: Net &lt;<arg fmt="%s" index="1">bf2_out_im[17]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\xfft_v8_0_d.vhd" Line 1105: Assignment to <arg fmt="%s" index="1">dout_valid_d</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\dpm.vhd" Line 879: Assignment to <arg fmt="%s" index="1">ram_data_open</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\dpm.vhd" Line 882: Assignment to <arg fmt="%s" index="1">ram_parity_open</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\xfft_v8_0_d.vhd" Line 255: Net &lt;<arg fmt="%s" index="1">pe_xk_load_out[0][17]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\xfft_v8_0_xst.vhd" Line 402: Net &lt;<arg fmt="%s" index="1">xk_re_array[11][50]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\xfft_v8_0_xst.vhd" Line 403: Net &lt;<arg fmt="%s" index="1">xk_im_array[11][50]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\xfft_v8_0_xst.vhd" Line 404: Net &lt;<arg fmt="%s" index="1">blk_exp_array[11][4]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\xfft_v8_0\xfft_v8_0_xst.vhd" Line 405: Net &lt;<arg fmt="%s" index="1">ovflo_array[11]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\FFT.vhd</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_data_tuser</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\FFT.vhd</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_status_tdata</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\FFT.vhd</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_status_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\tmp\_cg\_dbg\FFT.vhd</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">event_fft_overflow</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="new" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">use_DSP48a.appDSP48A[0].bppDSP48A[0].iDSP48A_0</arg> in unit <arg fmt="%s" index="2">cmpy_4_dsp48_mult_1</arg> of type <arg fmt="%s" index="3">DSP48A</arg> has been replaced by <arg fmt="%s" index="4">DSP48A1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">use_DSP48a.appDSP48A[0].bppDSP48A[0].iDSP48A_1</arg> in unit <arg fmt="%s" index="2">cmpy_4_dsp48_mult_1</arg> of type <arg fmt="%s" index="3">DSP48A</arg> has been replaced by <arg fmt="%s" index="4">DSP48A1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">use_DSP48a.appDSP48A[0].bppDSP48A[0].iDSP48A_0</arg> in unit <arg fmt="%s" index="2">cmpy_4_dsp48_mult_2</arg> of type <arg fmt="%s" index="3">DSP48A</arg> has been replaced by <arg fmt="%s" index="4">DSP48A1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">use_DSP48a.appDSP48A[0].bppDSP48A[0].iDSP48A_1</arg> in unit <arg fmt="%s" index="2">cmpy_4_dsp48_mult_2</arg> of type <arg fmt="%s" index="3">DSP48A</arg> has been replaced by <arg fmt="%s" index="4">DSP48A1</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">nfft_expandedm1_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">axi_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+
