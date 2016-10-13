@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    19:24:02 10/10/2016 
+// Create Date:    00:31:10 10/13/2016 
 // Design Name: 
-// Module Name:    ADC 
+// Module Name:    IFFTDataOutputHandler 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,14 +18,13 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module ADC(
-    output MOSI,
-    output SCK,
-    input MISO,
-	 input CLK,
-	 
-	 output [16:0] value // The most recent value read from the ADC
-	 
+module IFFTDataOutputHandler(
+    input [31:0] tData, // The real valued ifft output
+    input tValid, // Indicated that the FFT is ready to transmit data
+    input tLast, // Indicated that this is the last sample of a frame
+    output tReady, // Indicated that this module is ready to receive data
+    input [15:0] val,
+	 input CLK
     );
 
 

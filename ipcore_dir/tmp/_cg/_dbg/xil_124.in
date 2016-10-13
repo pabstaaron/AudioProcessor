@@ -1,0 +1,61 @@
+SET_FLAG DEBUG FALSE
+SET_FLAG MODE INTERACTIVE
+SET_FLAG STANDALONE_MODE FALSE
+SET_PREFERENCE devicefamily spartan6
+SET_PREFERENCE device xc6slx16
+SET_PREFERENCE speedgrade -3
+SET_PREFERENCE package csg324
+SET_PREFERENCE verilogsim true
+SET_PREFERENCE vhdlsim false
+SET_PREFERENCE simulationfiles Structural
+SET_PREFERENCE busformat BusFormatAngleBracketNotRipped
+SET_PREFERENCE outputdirectory E:/Documents/AudioProcessor/AudioProcessor/ipcore_dir/
+SET_PREFERENCE workingdirectory E:/Documents/AudioProcessor/AudioProcessor/ipcore_dir/tmp/
+SET_PREFERENCE subworkingdirectory E:/Documents/AudioProcessor/AudioProcessor/ipcore_dir/tmp/_cg/
+SET_PREFERENCE transientdirectory E:/Documents/AudioProcessor/AudioProcessor/ipcore_dir/tmp/_cg/_dbg/
+SET_PREFERENCE designentry Verilog
+SET_PREFERENCE flowvendor Other
+SET_PREFERENCE addpads false
+SET_PREFERENCE projectname coregen
+SET_PREFERENCE formalverification false
+SET_PREFERENCE asysymbol false
+SET_PREFERENCE implementationfiletype Ngc
+SET_PREFERENCE foundationsym false
+SET_PREFERENCE createndf false
+SET_PREFERENCE removerpms false
+SET_PARAMETER Component_Name FFT
+SET_PARAMETER channels 1
+SET_PARAMETER transform_length 2048
+SET_PARAMETER target_clock_frequency 100
+SET_PARAMETER implementation_options pipelined_streaming_io
+SET_PARAMETER target_data_throughput 50
+SET_PARAMETER run_time_configurable_transform_length true
+SET_PARAMETER data_format fixed_point
+SET_PARAMETER input_width 16
+SET_PARAMETER phase_factor_width 16
+SET_PARAMETER scaling_options scaled
+SET_PARAMETER rounding_modes convergent_rounding
+SET_PARAMETER aclken false
+SET_PARAMETER aresetn false
+SET_PARAMETER ovflo false
+SET_PARAMETER xk_index false
+SET_PARAMETER throttle_scheme nonrealtime
+SET_PARAMETER output_ordering natural_order
+SET_PARAMETER cyclic_prefix_insertion false
+SET_PARAMETER memory_options_data block_ram
+SET_PARAMETER memory_options_phase_factors block_ram
+SET_PARAMETER memory_options_reorder block_ram
+SET_PARAMETER number_of_stages_using_block_ram_for_data_and_phase_factors 4
+SET_PARAMETER memory_options_hybrid false
+SET_PARAMETER complex_mult_type use_mults_resources
+SET_PARAMETER butterfly_type use_luts
+SET_CORE_NAME Fast Fourier Transform
+SET_CORE_VERSION 8.0
+SET_CORE_VLNV xilinx.com:ip:xfft:8.0
+SET_CORE_CLASS com.xilinx.ip.xfft_v8_0.xfft_v8_0
+SET_CORE_PATH C:/Xilinx/14.7/ISE_DS/ISE/coregen/ip/xilinx/dsp/com/xilinx/ip/xfft_v8_0
+SET_CORE_GUIPATH C:/Xilinx/14.7/ISE_DS/ISE/coregen/ip/xilinx/dsp/com/xilinx/ip/xfft_v8_0/gui/xfft_v8_0.tcl
+SET_CORE_DATASHEET C:\Xilinx\14.7\ISE_DS\ISE\coregen\ip\xilinx\dsp\com\xilinx\ip\xfft_v8_0\doc\ds808_xfft.pdf
+ADD_CORE_DOCUMENT <C:\Xilinx\14.7\ISE_DS\ISE\coregen\ip\xilinx\dsp\com\xilinx\ip\xfft_v8_0\doc\xfft_v8_0_readme.txt><xfft_v8_0_readme.txt>
+ADD_CORE_DOCUMENT <C:\Xilinx\14.7\ISE_DS\ISE\coregen\ip\xilinx\dsp\com\xilinx\ip\xfft_v8_0\doc\xfft_v8_0_vinfo.html><xfft_v8_0_vinfo.html>
+ADD_CORE_DOCUMENT <C:\Xilinx\14.7\ISE_DS\ISE\coregen\ip\xilinx\dsp\com\xilinx\ip\xfft_v8_0\doc\ds808_xfft.pdf><ds808_xfft.pdf>

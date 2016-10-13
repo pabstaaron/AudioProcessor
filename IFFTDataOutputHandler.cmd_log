@@ -1,0 +1,4 @@
+vhdtdtfi -lib work E:/Documents/AudioProcessor/AudioProcessor/IFFTDataOutputHandler.v -lang verilog -prj ComputerDesign1 -o IFFTDataOutputHandler.spl -module IFFTDataOutputHandler -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 IFFTDataOutputHandler.spl E:/Documents/AudioProcessor/AudioProcessor/IFFTDataOutputHandler.sym 
+vhdtdtfi -lib work E:/Documents/AudioProcessor/AudioProcessor/IFFTDataOutputHandler.v -lang verilog -prj ComputerDesign1 -o IFFTDataOutputHandler.spl -module IFFTDataOutputHandler -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 IFFTDataOutputHandler.spl E:/Documents/AudioProcessor/AudioProcessor/IFFTDataOutputHandler.sym 

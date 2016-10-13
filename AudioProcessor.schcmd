@@ -1,0 +1,15 @@
+add autowire 2016 1136 2016 1280 8 -sn=1
+add autowire 2016 1280 2400 1280 8 -sn=1
+select figure at 2474 1293 8 -branches -sn=1
+select figure at 2586 1196 8 -branches -sn=1
+add iomarker 2400 1280 0 Unknown Unknown -sn=1
+BeginGroup
+add wire 2400 1072 2432 1072 -sn=1
+add iomarker 2432 1072 0 Output Unknown -sn=1
+EndGroup
+BeginGroup
+add wire 2400 1136 2432 1136 -sn=1
+add iomarker 2432 1136 0 Output Unknown -sn=1
+EndGroup
+select figure at 2477 1082 8 -branches -sn=1
+select figure at 2477 1082 8 -branches -all -sn=1

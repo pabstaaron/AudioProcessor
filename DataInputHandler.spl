@@ -1,0 +1,13 @@
+[Inputs]
+tReady
+CLK
+=value[15:0]=
+=frameSize[3:0]=
+[Outputs]
+tValid
+tLast
+=tData[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel DataInputHandler
+

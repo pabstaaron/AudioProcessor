@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    19:24:02 10/10/2016 
+// Create Date:    10:13:27 10/12/2016 
 // Design Name: 
-// Module Name:    ADC 
+// Module Name:    FFTConfigDriver 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,14 +18,12 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module ADC(
-    output MOSI,
-    output SCK,
-    input MISO,
-	 input CLK,
-	 
-	 output [16:0] value // The most recent value read from the ADC
-	 
+module FFTConfigDriver(
+    output [23:0] tData, // Configuration data for the FFT
+    output tValid, // Asserted when there is a new configuration to give the FFT
+    input tReady, // Asserted when the FFT is ready to recieve a new configuration
+    input [3:0] frameSize, // The current frame size
+    input CLK
     );
 
 

@@ -1,0 +1,15 @@
+[Inputs]
+tValid
+tLast
+memReady
+CLK
+=tData[31:0]=
+=frameSize[3:0]=
+[Outputs]
+tReady
+frameReady
+=freq[15:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel FFTDataOutputHandler
+

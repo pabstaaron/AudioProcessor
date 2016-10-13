@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    19:24:02 10/10/2016 
+// Create Date:    10:17:51 10/12/2016 
 // Design Name: 
-// Module Name:    ADC 
+// Module Name:    FFTDataOutputHandler 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,14 +18,16 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module ADC(
-    output MOSI,
-    output SCK,
-    input MISO,
-	 input CLK,
-	 
-	 output [16:0] value // The most recent value read from the ADC
-	 
+module FFTDataOutputHandler(
+    input [31:0] tData,
+    input tValid,
+    input tLast,
+    output tReady,
+    input [3:0] frameSize,
+    output frameReady,
+    input memReady,
+    output [15:0] freq,
+    input CLK
     );
 
 

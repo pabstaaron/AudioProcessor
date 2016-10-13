@@ -19,10 +19,12 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module DAC(
-    output [16:0] MOSI,
+    output MOSI,
     output SCK,
-    input [16:0] MISO,
-    input CLK
+    input MISO,
+    input CLK,
+	 
+	 input [15:0]value // The value to be pumped out of the DAC
     );
 
 
