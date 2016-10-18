@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : AudioProcessor.vf
-// /___/   /\     Timestamp : 10/10/2016 19:45:27
+// /___/   /\     Timestamp : 10/18/2016 15:16:23
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -20,30 +20,228 @@
 //
 `timescale 1ns / 1ps
 
-module AudioProcessor();
+module AudioProcessor(ADC_MISO, 
+                      CLK, 
+                      DAC_MISO, 
+                      ADC_MOSI, 
+                      ADC_SCK, 
+                      DAC_MOSI, 
+                      DAC_SCK);
 
+    input ADC_MISO;
+    input CLK;
+    input DAC_MISO;
+   output ADC_MOSI;
+   output ADC_SCK;
+   output DAC_MOSI;
+   output DAC_SCK;
    
+   wire [31:0] XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   wire [15:0] XLXN_10;
+   wire XLXN_11;
+   wire XLXN_12;
+   wire XLXN_13;
+   wire [31:0] XLXN_14;
+   wire XLXN_15;
+   wire XLXN_16;
+   wire [23:0] XLXN_17;
+   wire [31:0] XLXN_24;
+   wire XLXN_25;
+   wire XLXN_27;
+   wire XLXN_28;
+   wire [15:0] XLXN_29;
+   wire XLXN_33;
+   wire XLXN_34;
+   wire XLXN_35;
+   wire [31:0] XLXN_36;
+   wire XLXN_38;
+   wire XLXN_39;
+   wire [23:0] XLXN_40;
+   wire XLXN_184;
+   wire [15:0] XLXN_185;
+   wire [15:0] XLXN_186;
+   wire [15:0] XLXN_189;
+   wire [15:0] XLXN_190;
+   wire [0:0] XLXN_191;
+   wire [0:0] XLXN_192;
+   wire XLXN_193;
+   wire XLXN_194;
+   wire XLXN_195;
+   wire XLXN_196;
+   wire [15:0] XLXN_197;
+   wire [15:0] XLXN_198;
+   wire [15:0] XLXN_199;
+   wire [2:0] XLXN_200;
+   wire [15:0] XLXN_202;
+   wire [2:0] XLXN_203;
+   wire [2:0] XLXN_204;
+   wire [2:0] XLXN_205;
+   wire XLXN_206;
+   wire [15:0] XLXN_207;
+   wire [11:0] XLXN_208;
+   wire XLXN_210;
+   wire [15:0] XLXN_211;
+   wire [15:0] XLXN_214;
+   wire [3:0] XLXN_216;
+   wire XLXN_222;
+   wire XLXN_223;
+   wire XLXN_224;
+   wire [7:0] XLXN_225;
    
-   FFT  XLXI_1 (.aclk(), 
-               .m_axis_data_tready(), 
-               .s_axis_config_tdata(), 
-               .s_axis_config_tvalid(), 
-               .s_axis_data_tdata(), 
-               .s_axis_data_tlast(), 
-               .s_axis_data_tvalid(), 
+   FFT  XLXI_1 (.aclk(CLK), 
+               .m_axis_data_tready(XLXN_11), 
+               .s_axis_config_tdata(XLXN_17[23:0]), 
+               .s_axis_config_tvalid(XLXN_15), 
+               .s_axis_data_tdata(XLXN_6[31:0]), 
+               .s_axis_data_tlast(XLXN_9), 
+               .s_axis_data_tvalid(XLXN_8), 
                .event_data_in_channel_halt(), 
                .event_data_out_channel_halt(), 
                .event_frame_started(), 
                .event_status_channel_halt(), 
                .event_tlast_missing(), 
                .event_tlast_unexpected(), 
-               .m_axis_data_tdata(), 
-               .m_axis_data_tlast(), 
-               .m_axis_data_tvalid(), 
-               .s_axis_config_tready(), 
-               .s_axis_data_tready());
-   DAC  XLXI_4 (.CLK(), 
-               .MISO(), 
-               .MOSI(), 
-               .SCK());
+               .m_axis_data_tdata(XLXN_14[31:0]), 
+               .m_axis_data_tlast(XLXN_13), 
+               .m_axis_data_tvalid(XLXN_12), 
+               .s_axis_config_tready(XLXN_16), 
+               .s_axis_data_tready(XLXN_7));
+   DAC  XLXI_7 (.CLK(CLK), 
+               .MISO(DAC_MISO), 
+               .value(XLXN_29[15:0]), 
+               .MOSI(DAC_MOSI), 
+               .SCK(DAC_SCK));
+   FFT  XLXI_8 (.aclk(CLK), 
+               .m_axis_data_tready(XLXN_28), 
+               .s_axis_config_tdata(XLXN_40[23:0]), 
+               .s_axis_config_tvalid(XLXN_39), 
+               .s_axis_data_tdata(XLXN_36[31:0]), 
+               .s_axis_data_tlast(XLXN_34), 
+               .s_axis_data_tvalid(XLXN_33), 
+               .event_data_in_channel_halt(), 
+               .event_data_out_channel_halt(), 
+               .event_frame_started(), 
+               .event_status_channel_halt(), 
+               .event_tlast_missing(), 
+               .event_tlast_unexpected(), 
+               .m_axis_data_tdata(XLXN_24[31:0]), 
+               .m_axis_data_tlast(XLXN_27), 
+               .m_axis_data_tvalid(XLXN_25), 
+               .s_axis_config_tready(XLXN_38), 
+               .s_axis_data_tready(XLXN_35));
+   DataInputHandler  XLXI_9 (.CLK(CLK), 
+                            .frameSize(XLXN_216[3:0]), 
+                            .tReady(XLXN_7), 
+                            .value(XLXN_10[15:0]), 
+                            .tData(XLXN_6[31:0]), 
+                            .tLast(XLXN_9), 
+                            .tValid(XLXN_8));
+   ADC  XLXI_10 (.CLK(CLK), 
+                .MISO(ADC_MISO), 
+                .MOSI(ADC_MOSI), 
+                .SCK(ADC_SCK), 
+                .value(XLXN_10[15:0]));
+   FFTDataOutputHandler  XLXI_11 (.CLK(CLK), 
+                                 .frameSize(XLXN_216[3:0]), 
+                                 .memReady(XLXN_223), 
+                                 .tData(XLXN_14[31:0]), 
+                                 .tLast(XLXN_13), 
+                                 .tValid(XLXN_12), 
+                                 .frameReady(XLXN_184), 
+                                 .freq(XLXN_185[15:0]), 
+                                 .tReady(XLXN_11));
+   FFTConfigDriver  XLXI_12 (.CLK(CLK), 
+                            .frameSize(XLXN_216[3:0]), 
+                            .tReady(XLXN_16), 
+                            .tData(XLXN_17[23:0]), 
+                            .tValid(XLXN_15));
+   IFFTDataOutputHandler  XLXI_13 (.CLK(CLK), 
+                                  .tData(XLXN_24[31:0]), 
+                                  .tLast(XLXN_27), 
+                                  .tValid(XLXN_25), 
+                                  .val(XLXN_29[15:0]), 
+                                  .tReady(XLXN_28));
+   IFFTDataInputHandler  XLXI_14 (.CLK(CLK), 
+                                 .memReady(XLXN_222), 
+                                 .tReady(XLXN_35), 
+                                 .value(XLXN_186[15:0]), 
+                                 .frameReady(XLXN_224), 
+                                 .tData(XLXN_36[31:0]), 
+                                 .tLast(XLXN_34), 
+                                 .tValid(XLXN_33));
+   IFFTConfigDriver  XLXI_15 (.frameSize(XLXN_216[3:0]), 
+                             .tReady(XLXN_38), 
+                             .tData(XLXN_40[23:0]), 
+                             .tValid(XLXN_39));
+   DataMemory  XLXI_24 (.addra(), 
+                       .addrb(), 
+                       .clka(CLK), 
+                       .clkb(CLK), 
+                       .dina(), 
+                       .dinb(), 
+                       .wea(XLXN_191[0]), 
+                       .web(XLXN_192[0]), 
+                       .douta(XLXN_189[15:0]), 
+                       .doutb(XLXN_190[15:0]));
+   PrgmMemory  XLXI_25 (.addra(XLXN_208[11:0]), 
+                       .clka(CLK), 
+                       .dina(), 
+                       .wea(), 
+                       .douta(XLXN_207[15:0]));
+   DataArbitrationUnit  XLXI_26 (.blkDataA(XLXN_189[15:0]), 
+                                .blkDataB(XLXN_190[15:0]), 
+                                .blkPtr(XLXN_225[7:0]), 
+                                .CLK(CLK), 
+                                .controlAddr(XLXN_214[15:0]), 
+                                .controlDin(XLXN_211[15:0]), 
+                                .coreAddr(XLXN_199[15:0]), 
+                                .coreDout(XLXN_198[15:0]), 
+                                .coreReadRequest(XLXN_195), 
+                                .coreWriteRequest(XLXN_194), 
+                                .fftDout(XLXN_185[15:0]), 
+                                .fftFrameReady(XLXN_184), 
+                                .frameSize(XLXN_216[3:0]), 
+                                .ifftFrameReady(XLXN_224), 
+                                .outputFrame(XLXN_210), 
+                                .blkAddrA(), 
+                                .blkAddrB(), 
+                                .coreDataReady(XLXN_193), 
+                                .coreDin(XLXN_197[15:0]), 
+                                .fftMemReady(XLXN_223), 
+                                .iFFFTDataReady(), 
+                                .ifftDin(XLXN_186[15:0]), 
+                                .ifftMemReady(XLXN_222), 
+                                .weaA(XLXN_191[0]), 
+                                .weaB(XLXN_192[0]), 
+                                .coreStreamRequest(XLXN_196));
+   ControlSystem  XLXI_27 (.CLK(CLK), 
+                          .instr(XLXN_207[15:0]), 
+                          .instrComplete(XLXN_206), 
+                          .address(XLXN_214[15:0]), 
+                          .blkPtr(XLXN_225[7:0]), 
+                          .data(XLXN_211[15:0]), 
+                          .dInImmediate(XLXN_202[15:0]), 
+                          .frameSize(XLXN_216[3:0]), 
+                          .opcode(XLXN_200[2:0]), 
+                          .ouputFrame(XLXN_210), 
+                          .PC(XLXN_208[11:0]), 
+                          .regA(XLXN_203[2:0]), 
+                          .regB(XLXN_204[2:0]), 
+                          .regC(XLXN_205[2:0]));
+   Core  XLXI_28 (.dIn(XLXN_197[15:0]), 
+                 .dInImmediate(XLXN_202[15:0]), 
+                 .opcode(XLXN_200[2:0]), 
+                 .readRequest(XLXN_195), 
+                 .ready(XLXN_193), 
+                 .regA(XLXN_203[2:0]), 
+                 .regB(XLXN_204[2:0]), 
+                 .regC(XLXN_205[2:0]), 
+                 .streamRequest(XLXN_196), 
+                 .writeRequest(XLXN_194), 
+                 .addr(XLXN_199[15:0]), 
+                 .dOut(XLXN_198[15:0]), 
+                 .instrComplete(XLXN_206));
 endmodule

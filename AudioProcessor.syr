@@ -3,13 +3,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.33 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.34 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.34 secs
  
 --> Reading design: AudioProcessor.prj
@@ -108,16 +108,42 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
+Analyzing Verilog file "E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\PrgmMemory.v" into library work
+Parsing module <PrgmMemory>.
 Analyzing Verilog file "E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\FFT.v" into library work
 Parsing module <FFT>.
+Analyzing Verilog file "E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\DataMemory.v" into library work
+Parsing module <DataMemory>.
+Analyzing Verilog file "E:\OneDrive\Documents\ComputerDesign1\IFFTDataOutputHandler.v" into library work
+Parsing module <IFFTDataOutputHandler>.
+Analyzing Verilog file "E:\OneDrive\Documents\ComputerDesign1\IFFTDataInputHandler.v" into library work
+Parsing module <IFFTDataInputHandler>.
+Analyzing Verilog file "E:\OneDrive\Documents\ComputerDesign1\IFFTConfigDriver.v" into library work
+Parsing module <IFFTConfigDriver>.
+Analyzing Verilog file "E:\OneDrive\Documents\ComputerDesign1\FFTDataOutputHandler.v" into library work
+Parsing module <FFTDataOutputHandler>.
+Analyzing Verilog file "E:\OneDrive\Documents\ComputerDesign1\FFTConfigDriver.v" into library work
+Parsing module <FFTConfigDriver>.
+Analyzing Verilog file "E:\OneDrive\Documents\ComputerDesign1\DataInputHandler.v" into library work
+Parsing module <DataInputHandler>.
+Analyzing Verilog file "E:\OneDrive\Documents\ComputerDesign1\DataArbitrationUnit.v" into library work
+Parsing module <DataArbitrationUnit>.
 Analyzing Verilog file "E:\OneDrive\Documents\ComputerDesign1\DAC.v" into library work
 Parsing module <DAC>.
+Analyzing Verilog file "E:\OneDrive\Documents\ComputerDesign1\Core.v" into library work
+Parsing module <Core>.
+Analyzing Verilog file "E:\OneDrive\Documents\ComputerDesign1\ControlSystem.v" into library work
+Parsing module <ControlSystem>.
+Analyzing Verilog file "E:\OneDrive\Documents\ComputerDesign1\ADC.v" into library work
+Parsing module <ADC>.
 Analyzing Verilog file "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" into library work
 Parsing module <AudioProcessor>.
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
+WARNING:HDLCompiler:1016 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" Line 175: Port CLK is not connected to this instance
+WARNING:HDLCompiler:1016 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" Line 234: Port CLK is not connected to this instance
 
 Elaborating module <AudioProcessor>.
 
@@ -125,7 +151,49 @@ Elaborating module <FFT>.
 
 Elaborating module <DAC>.
 WARNING:HDLCompiler:1499 - "E:\OneDrive\Documents\ComputerDesign1\DAC.v" Line 21: Empty module <DAC> remains a black box.
-WARNING:HDLCompiler:552 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" Line 45: Input port MISO[16] is not connected on this instance
+
+Elaborating module <DataInputHandler>.
+WARNING:HDLCompiler:1499 - "E:\OneDrive\Documents\ComputerDesign1\DataInputHandler.v" Line 21: Empty module <DataInputHandler> remains a black box.
+
+Elaborating module <ADC>.
+WARNING:HDLCompiler:1499 - "E:\OneDrive\Documents\ComputerDesign1\ADC.v" Line 21: Empty module <ADC> remains a black box.
+
+Elaborating module <FFTDataOutputHandler>.
+WARNING:HDLCompiler:1499 - "E:\OneDrive\Documents\ComputerDesign1\FFTDataOutputHandler.v" Line 21: Empty module <FFTDataOutputHandler> remains a black box.
+
+Elaborating module <FFTConfigDriver>.
+WARNING:HDLCompiler:1499 - "E:\OneDrive\Documents\ComputerDesign1\FFTConfigDriver.v" Line 21: Empty module <FFTConfigDriver> remains a black box.
+
+Elaborating module <IFFTDataOutputHandler>.
+WARNING:HDLCompiler:1499 - "E:\OneDrive\Documents\ComputerDesign1\IFFTDataOutputHandler.v" Line 21: Empty module <IFFTDataOutputHandler> remains a black box.
+
+Elaborating module <IFFTDataInputHandler>.
+WARNING:HDLCompiler:1499 - "E:\OneDrive\Documents\ComputerDesign1\IFFTDataInputHandler.v" Line 21: Empty module <IFFTDataInputHandler> remains a black box.
+
+Elaborating module <IFFTConfigDriver>.
+WARNING:HDLCompiler:1499 - "E:\OneDrive\Documents\ComputerDesign1\IFFTConfigDriver.v" Line 21: Empty module <IFFTConfigDriver> remains a black box.
+
+Elaborating module <DataMemory>.
+WARNING:HDLCompiler:1499 - "E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\DataMemory.v" Line 39: Empty module <DataMemory> remains a black box.
+
+Elaborating module <PrgmMemory>.
+WARNING:HDLCompiler:1499 - "E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\PrgmMemory.v" Line 39: Empty module <PrgmMemory> remains a black box.
+
+Elaborating module <DataArbitrationUnit>.
+WARNING:HDLCompiler:1499 - "E:\OneDrive\Documents\ComputerDesign1\DataArbitrationUnit.v" Line 21: Empty module <DataArbitrationUnit> remains a black box.
+
+Elaborating module <ControlSystem>.
+WARNING:HDLCompiler:1499 - "E:\OneDrive\Documents\ComputerDesign1\ControlSystem.v" Line 21: Empty module <ControlSystem> remains a black box.
+
+Elaborating module <Core>.
+WARNING:HDLCompiler:1499 - "E:\OneDrive\Documents\ComputerDesign1\Core.v" Line 40: Empty module <Core> remains a black box.
+WARNING:HDLCompiler:634 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" Line 55: Net <XLXN_29[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" Line 71: Net <XLXN_194> does not have a driver.
+WARNING:HDLCompiler:634 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" Line 72: Net <XLXN_195> does not have a driver.
+WARNING:HDLCompiler:552 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" Line 175: Input port CLK is not connected on this instance
+WARNING:HDLCompiler:552 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" Line 179: Input port addra[11] is not connected on this instance
+WARNING:HDLCompiler:552 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" Line 189: Input port wea[0] is not connected on this instance
+WARNING:HDLCompiler:552 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" Line 234: Input port CLK is not connected on this instance
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -133,19 +201,24 @@ WARNING:HDLCompiler:552 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.
 
 Synthesizing Unit <AudioProcessor>.
     Related source file is "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf".
-INFO:Xst:3210 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" line 27: Output port <m_axis_data_tdata> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" line 27: Output port <s_axis_config_tready> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" line 27: Output port <s_axis_data_tready> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" line 27: Output port <m_axis_data_tvalid> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" line 27: Output port <m_axis_data_tlast> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" line 27: Output port <event_frame_started> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" line 27: Output port <event_tlast_unexpected> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" line 27: Output port <event_tlast_missing> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" line 27: Output port <event_status_channel_halt> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" line 27: Output port <event_data_in_channel_halt> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" line 27: Output port <event_data_out_channel_halt> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" line 45: Output port <MOSI> of the instance <XLXI_4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" line 45: Output port <SCK> of the instance <XLXI_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" line 94: Output port <event_frame_started> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" line 94: Output port <event_tlast_unexpected> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" line 94: Output port <event_tlast_missing> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" line 94: Output port <event_status_channel_halt> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" line 94: Output port <event_data_in_channel_halt> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" line 94: Output port <event_data_out_channel_halt> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" line 117: Output port <event_frame_started> of the instance <XLXI_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" line 117: Output port <event_tlast_unexpected> of the instance <XLXI_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" line 117: Output port <event_tlast_missing> of the instance <XLXI_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" line 117: Output port <event_status_channel_halt> of the instance <XLXI_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" line 117: Output port <event_data_in_channel_halt> of the instance <XLXI_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" line 117: Output port <event_data_out_channel_halt> of the instance <XLXI_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" line 194: Output port <blkAddrA> of the instance <XLXI_26> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" line 194: Output port <blkAddrB> of the instance <XLXI_26> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" line 194: Output port <iFFFTDataReady> of the instance <XLXI_26> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <XLXN_29> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_194> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_195> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
 Unit <AudioProcessor> synthesized.
@@ -162,7 +235,12 @@ Found no macro
 
 Reading core <ipcore_dir/FFT.ngc>.
 Reading Secure Unit <blk00000001>.
+Reading core <ipcore_dir/DataMemory.ngc>.
+Reading core <ipcore_dir/PrgmMemory.ngc>.
 Loading core <FFT> for timing and area information for instance <XLXI_1>.
+Loading core <FFT> for timing and area information for instance <XLXI_8>.
+Loading core <DataMemory> for timing and area information for instance <XLXI_24>.
+Loading core <PrgmMemory> for timing and area information for instance <XLXI_25>.
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -177,8 +255,12 @@ Found no macro
 Optimizing unit <AudioProcessor> ...
 
 Mapping all equations...
+WARNING:Xst:2036 - Inserting OBUF on port <ADC_MOSI> driven by black box <ADC>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <ADC_SCK> driven by black box <ADC>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <DAC_MOSI> driven by black box <DAC>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <DAC_SCK> driven by black box <DAC>. Possible simulation mismatch.
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block AudioProcessor, actual ratio is 5.
+Found area constraint ratio of 100 (+ 5) on block AudioProcessor, actual ratio is 4.
 
 Final Macro Processing ...
 
@@ -207,39 +289,53 @@ Top Level Output File Name         : AudioProcessor.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 6737
-#      GND                         : 129
-#      INV                         : 70
-#      LUT1                        : 338
-#      LUT2                        : 476
-#      LUT3                        : 1494
-#      LUT4                        : 540
-#      LUT5                        : 81
-#      LUT6                        : 591
-#      MULT_AND                    : 210
-#      MUXCY                       : 1361
-#      MUXF7                       : 78
-#      MUXF8                       : 22
-#      VCC                         : 49
-#      XORCY                       : 1298
-# FlipFlops/Latches                : 5596
-#      FD                          : 176
-#      FDE                         : 2934
-#      FDR                         : 52
-#      FDRE                        : 2386
-#      FDS                         : 17
-#      FDSE                        : 31
-# RAMS                             : 11
-#      RAMB16BWER                  : 7
-#      RAMB8BWER                   : 4
-# Shift Registers                  : 1451
-#      SRL16E                      : 960
-#      SRLC16E                     : 142
-#      SRLC32E                     : 349
-# DSPs                             : 20
-#      DSP48A1                     : 20
-# Others                           : 1
+# BELS                             : 7437
+#      GND                         : 93
+#      INV                         : 318
+#      LUT1                        : 294
+#      LUT2                        : 638
+#      LUT3                        : 1282
+#      LUT4                        : 208
+#      LUT5                        : 146
+#      LUT6                        : 1336
+#      MULT_AND                    : 160
+#      MUXCY                       : 1420
+#      MUXF7                       : 40
+#      VCC                         : 60
+#      XORCY                       : 1442
+# FlipFlops/Latches                : 5778
+#      FD                          : 262
+#      FDE                         : 3176
+#      FDR                         : 14
+#      FDRE                        : 2252
+#      FDS                         : 34
+#      FDSE                        : 40
+# RAMS                             : 22
+#      RAMB16BWER                  : 16
+#      RAMB8BWER                   : 6
+# Shift Registers                  : 1148
+#      SRL16E                      : 468
+#      SRLC16E                     : 600
+#      SRLC32E                     : 80
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 7
+#      IBUF                        : 3
+#      OBUF                        : 4
+# DSPs                             : 18
+#      DSP48A1                     : 18
+# Others                           : 11
+#      ADC                         : 1
+#      ControlSystem               : 1
+#      Core                        : 1
 #      DAC                         : 1
+#      DataArbitrationUnit         : 1
+#      DataInputHandler            : 1
+#      FFTConfigDriver             : 1
+#      FFTDataOutputHandler        : 1
+#      IFFTConfigDriver            : 1
+#      IFFTDataInputHandler        : 1
+#      IFFTDataOutputHandler       : 1
 
 Device utilization summary:
 ---------------------------
@@ -248,27 +344,28 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            5596  out of  18224    30%  
- Number of Slice LUTs:                 5041  out of   9112    55%  
-    Number used as Logic:              3590  out of   9112    39%  
-    Number used as Memory:             1451  out of   2176    66%  
-       Number used as SRL:             1451
+ Number of Slice Registers:            5778  out of  18224    31%  
+ Number of Slice LUTs:                 5370  out of   9112    58%  
+    Number used as Logic:              4222  out of   9112    46%  
+    Number used as Memory:             1148  out of   2176    52%  
+       Number used as SRL:             1148
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   7348
-   Number with an unused Flip Flop:    1752  out of   7348    23%  
-   Number with an unused LUT:          2307  out of   7348    31%  
-   Number of fully used LUT-FF pairs:  3289  out of   7348    44%  
+ Number of LUT Flip Flop pairs used:   7996
+   Number with an unused Flip Flop:    2218  out of   7996    27%  
+   Number with an unused LUT:          2626  out of   7996    32%  
+   Number of fully used LUT-FF pairs:  3152  out of   7996    39%  
    Number of unique control sets:         0
 
 IO Utilization: 
- Number of IOs:                           0
- Number of bonded IOBs:                   0  out of    232     0%  
+ Number of IOs:                           7
+ Number of bonded IOBs:                   7  out of    232     3%  
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:                9  out of     32    28%  
-    Number using Block RAM only:          9
- Number of DSP48A1s:                     20  out of     32    62%  
+ Number of Block RAM/FIFO:               19  out of     32    59%  
+    Number using Block RAM only:         19
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+ Number of DSP48A1s:                     18  out of     32    56%  
 
 ---------------------------
 Partition Resource Summary:
@@ -288,7 +385,13 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-No clock signals found in this design
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                                            | Load  |
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------+
+CLK                                | IBUF+BUFG                                                                                                                        | 6966  |
+XLXI_25/N1                         | NONE(XLXI_25/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)| 4     |
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -298,31 +401,121 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: No path found
-   Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: No path found
-   Maximum combinational path delay: No path found
+   Minimum period: 5.619ns (Maximum Frequency: 177.967MHz)
+   Minimum input arrival time before clock: 2.764ns
+   Maximum output required time after clock: 1.850ns
+   Maximum combinational path delay: 3.150ns
 
 Timing Details:
 ---------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 5.619ns (frequency: 177.967MHz)
+  Total number of paths / destination ports: 66358 / 16388
+-------------------------------------------------------------------------
+Delay:               5.619ns (Levels of Logic = 3)
+  Source:            sec_inst (FF)
+  Destination:       sec_inst (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: sec_inst to sec_inst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SEC:C->out         3031   0.447   2.695  sec_inst (sec_net)
+     SEC:in->out         128   0.205   1.950  sec_inst (sec_net)
+     SEC:in                    0.322          sec_inst
+    ----------------------------------------
+    Total                      5.619ns (0.974ns logic, 4.645ns route)
+                                       (17.3% logic, 82.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 288 / 268
+-------------------------------------------------------------------------
+Offset:              2.764ns (Levels of Logic = 3)
+  Source:            XLXI_13:tReady (PAD)
+  Destination:       sec_inst (FF)
+  Destination Clock: CLK rising
+
+  Data Path: XLXI_13:tReady to sec_inst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    IFFTDataOutputHandler:tReady    9   0.000   0.000  XLXI_13 (XLXN_28)
+     begin scope: 'XLXI_8:m_axis_data_tready'
+     begin scope: 'XLXI_8/blk00000001:m_axis_data_tready'
+     SEC:in->out          33   0.203   1.305  sec_inst (sec_net)
+     SEC:in                    0.322          sec_inst
+    ----------------------------------------
+    Total                      2.764ns (1.459ns logic, 1.305ns route)
+                                       (52.8% logic, 47.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 120 / 120
+-------------------------------------------------------------------------
+Offset:              1.850ns (Levels of Logic = 1)
+  Source:            XLXI_24/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram (RAM)
+  Destination:       XLXI_26:blkDataA<15> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: XLXI_24/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram to XLXI_26:blkDataA<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16BWER:CLKA->DOA3    0   1.850   0.000  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram (douta<15>)
+     end scope: 'XLXI_24:douta<15>'
+    DataArbitrationUnit:blkDataA<15>        0.000          XLXI_26
+    ----------------------------------------
+    Total                      1.850ns (1.850ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 207 / 207
+-------------------------------------------------------------------------
+Delay:               3.150ns (Levels of Logic = 1)
+  Source:            XLXI_10:MOSI (PAD)
+  Destination:       ADC_MOSI (PAD)
+
+  Data Path: XLXI_10:MOSI to ADC_MOSI
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    ADC:MOSI               1   0.000   0.579  XLXI_10 (ADC_MOSI_OBUF)
+     OBUF:I->O                 2.571          ADC_MOSI_OBUF (ADC_MOSI)
+    ----------------------------------------
+    Total                      3.150ns (2.571ns logic, 0.579ns route)
+                                       (81.6% logic, 18.4% route)
+
+=========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    5.619|         |         |         |
+---------------+---------+---------+---------+---------+
+
 =========================================================================
 
 
-Total REAL time to Xst completion: 66.00 secs
-Total CPU time to Xst completion: 65.63 secs
+Total REAL time to Xst completion: 55.00 secs
+Total CPU time to Xst completion: 55.10 secs
  
 --> 
 
-Total memory usage is 384444 kilobytes
+Total memory usage is 379940 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    2 (   0 filtered)
-Number of infos    :   13 (   0 filtered)
+Number of warnings :   29 (   0 filtered)
+Number of infos    :   16 (   0 filtered)
 

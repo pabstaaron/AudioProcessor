@@ -1,23 +1,8 @@
-update symbols IFFTDataOutputHandler
-add autowire 2272 2320 2720 1504 8 -sn=1
-BeginGroup
-add wire 3264 2096 3296 2096 -sn=1
-add iomarker 3296 2096 0 Output Unknown -sn=1
-EndGroup
-BeginGroup
-add wire 3264 2224 3296 2224 -sn=1
-add iomarker 3296 2224 0 Output Unknown -sn=1
-EndGroup
-BeginGroup
-add wire 2880 2224 2848 2224 -sn=1
-add iomarker 2848 2224 0 Input Unknown -sn=1
-EndGroup
-select figure at 3370 2104 8 -branches -sn=1
-select figure at 3370 2104 8 -branches -all -sn=1
-name net at 3264 2096 8 DAC_SCK -sn=1
-select figure at 3318 2224 8 -branches -sn=1
-name net at 3264 2224 8 DAC_MOSI -sn=1
-select figure at 2791 2226 8 -branches -sn=1
-name net at 2848 2224 8 DAC_MISO -sn=1
-move iomarker at 2848 2224 to 3472 2304 R180 -keepConn -sn=1
-select figure at 3421 2554 8 -branches -sn=1
+select figure at 5383 2248 8 -branches -sn=1
+select figure at 4532 564 8 -branches -sn=1
+select figure at 4532 564 8 -branches -all -sn=1
+select figure at 6211 505 8 -branches -sn=1
+select figure at 5565 564 8 -branches -sn=1
+select figure at 4673 687 8 -branches -sn=1
+select figure at 4743 640 8 -branches -sn=1
+select figure at 4755 2483 8 -branches -sn=1

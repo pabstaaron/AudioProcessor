@@ -10,3 +10,5 @@ vhdtdtfi -lib work E:/Documents/AudioProcessor/AudioProcessor/ADC.v -lang verilo
 spl2sym -intstyle ise -family spartan6 ADC.spl E:/Documents/AudioProcessor/AudioProcessor/ADC.sym 
 vhdtdtfi -lib work E:/Documents/AudioProcessor/AudioProcessor/ADC.v -lang verilog -prj ComputerDesign1 -o ADC.spl -module ADC -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
 spl2sym -intstyle ise -family spartan6 ADC.spl E:/Documents/AudioProcessor/AudioProcessor/ADC.sym 
+vhdtdtfi -lib work E:/OneDrive/Documents/ComputerDesign1/ADC.v -lang verilog -prj ComputerDesign1 -o ADC.spl -module ADC -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 ADC.spl E:/OneDrive/Documents/ComputerDesign1/ADC.sym 

@@ -24,7 +24,7 @@ module ADC(
     input MISO,
 	 input CLK,
 	 
-	 output [16:0] value // The most recent value read from the ADC
+	 output [15:0] value // The most recent value read from the ADC
 	 
     );
 

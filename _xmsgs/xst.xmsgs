@@ -5,49 +5,139 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\DAC.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">DAC</arg>&gt; remains a black box.
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" Line 175: Port <arg fmt="%s" index="1">CLK</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="552" delta="new" >"E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" Line 45: Input port <arg fmt="%s" index="1">MISO[16]</arg> is not connected on this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" Line 234: Port <arg fmt="%s" index="1">CLK</arg> is not connected to this instance
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf</arg>&quot; line <arg fmt="%s" index="2">27</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_data_tdata</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\DAC.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">DAC</arg>&gt; remains a black box.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf</arg>&quot; line <arg fmt="%s" index="2">27</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_config_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\DataInputHandler.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">DataInputHandler</arg>&gt; remains a black box.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf</arg>&quot; line <arg fmt="%s" index="2">27</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_data_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ADC.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">ADC</arg>&gt; remains a black box.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf</arg>&quot; line <arg fmt="%s" index="2">27</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_data_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\FFTDataOutputHandler.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">FFTDataOutputHandler</arg>&gt; remains a black box.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf</arg>&quot; line <arg fmt="%s" index="2">27</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_data_tlast</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\FFTConfigDriver.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">FFTConfigDriver</arg>&gt; remains a black box.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf</arg>&quot; line <arg fmt="%s" index="2">27</arg>: Output port &lt;<arg fmt="%s" index="3">event_frame_started</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\IFFTDataOutputHandler.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">IFFTDataOutputHandler</arg>&gt; remains a black box.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf</arg>&quot; line <arg fmt="%s" index="2">27</arg>: Output port &lt;<arg fmt="%s" index="3">event_tlast_unexpected</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\IFFTDataInputHandler.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">IFFTDataInputHandler</arg>&gt; remains a black box.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf</arg>&quot; line <arg fmt="%s" index="2">27</arg>: Output port &lt;<arg fmt="%s" index="3">event_tlast_missing</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\IFFTConfigDriver.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">IFFTConfigDriver</arg>&gt; remains a black box.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf</arg>&quot; line <arg fmt="%s" index="2">27</arg>: Output port &lt;<arg fmt="%s" index="3">event_status_channel_halt</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\DataMemory.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">DataMemory</arg>&gt; remains a black box.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf</arg>&quot; line <arg fmt="%s" index="2">27</arg>: Output port &lt;<arg fmt="%s" index="3">event_data_in_channel_halt</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\PrgmMemory.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">PrgmMemory</arg>&gt; remains a black box.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf</arg>&quot; line <arg fmt="%s" index="2">27</arg>: Output port &lt;<arg fmt="%s" index="3">event_data_out_channel_halt</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\DataArbitrationUnit.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">DataArbitrationUnit</arg>&gt; remains a black box.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf</arg>&quot; line <arg fmt="%s" index="2">45</arg>: Output port &lt;<arg fmt="%s" index="3">MOSI</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_4</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\ControlSystem.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">ControlSystem</arg>&gt; remains a black box.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf</arg>&quot; line <arg fmt="%s" index="2">45</arg>: Output port &lt;<arg fmt="%s" index="3">SCK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_4</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\Core.v" Line 40: Empty module &lt;<arg fmt="%s" index="1">Core</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" Line 55: Net &lt;<arg fmt="%s" index="1">XLXN_29[15]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" Line 71: Net &lt;<arg fmt="%s" index="1">XLXN_194</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" Line 72: Net &lt;<arg fmt="%s" index="1">XLXN_195</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" Line 175: Input port <arg fmt="%s" index="1">CLK</arg> is not connected on this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" Line 179: Input port <arg fmt="%s" index="1">addra[11]</arg> is not connected on this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" Line 189: Input port <arg fmt="%s" index="1">wea[0]</arg> is not connected on this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" Line 234: Input port <arg fmt="%s" index="1">CLK</arg> is not connected on this instance
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf</arg>&quot; line <arg fmt="%s" index="2">94</arg>: Output port &lt;<arg fmt="%s" index="3">event_frame_started</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf</arg>&quot; line <arg fmt="%s" index="2">94</arg>: Output port &lt;<arg fmt="%s" index="3">event_tlast_unexpected</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf</arg>&quot; line <arg fmt="%s" index="2">94</arg>: Output port &lt;<arg fmt="%s" index="3">event_tlast_missing</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf</arg>&quot; line <arg fmt="%s" index="2">94</arg>: Output port &lt;<arg fmt="%s" index="3">event_status_channel_halt</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf</arg>&quot; line <arg fmt="%s" index="2">94</arg>: Output port &lt;<arg fmt="%s" index="3">event_data_in_channel_halt</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf</arg>&quot; line <arg fmt="%s" index="2">94</arg>: Output port &lt;<arg fmt="%s" index="3">event_data_out_channel_halt</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf</arg>&quot; line <arg fmt="%s" index="2">117</arg>: Output port &lt;<arg fmt="%s" index="3">event_frame_started</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_8</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf</arg>&quot; line <arg fmt="%s" index="2">117</arg>: Output port &lt;<arg fmt="%s" index="3">event_tlast_unexpected</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_8</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf</arg>&quot; line <arg fmt="%s" index="2">117</arg>: Output port &lt;<arg fmt="%s" index="3">event_tlast_missing</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_8</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf</arg>&quot; line <arg fmt="%s" index="2">117</arg>: Output port &lt;<arg fmt="%s" index="3">event_status_channel_halt</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_8</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf</arg>&quot; line <arg fmt="%s" index="2">117</arg>: Output port &lt;<arg fmt="%s" index="3">event_data_in_channel_halt</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_8</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf</arg>&quot; line <arg fmt="%s" index="2">117</arg>: Output port &lt;<arg fmt="%s" index="3">event_data_out_channel_halt</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_8</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf</arg>&quot; line <arg fmt="%s" index="2">194</arg>: Output port &lt;<arg fmt="%s" index="3">blkAddrA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_26</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf</arg>&quot; line <arg fmt="%s" index="2">194</arg>: Output port &lt;<arg fmt="%s" index="3">blkAddrB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_26</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf</arg>&quot; line <arg fmt="%s" index="2">194</arg>: Output port &lt;<arg fmt="%s" index="3">iFFFTDataReady</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_26</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_29</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_194</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_195</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2036" delta="old" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">ADC_MOSI</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">ADC</arg>&gt;. Possible simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="2036" delta="old" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">ADC_SCK</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">ADC</arg>&gt;. Possible simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="2036" delta="old" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">DAC_MOSI</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">DAC</arg>&gt;. Possible simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="2036" delta="old" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">DAC_SCK</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">DAC</arg>&gt;. Possible simulation mismatch.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 </msg>
 
 </messages>
