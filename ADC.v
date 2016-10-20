@@ -25,7 +25,6 @@ module ADC(
 	 input CLK,
 	 
 	 output [15:0] value // The most recent value read from the ADC
-	 
     );
 
 

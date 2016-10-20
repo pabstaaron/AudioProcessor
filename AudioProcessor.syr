@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.34 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.34 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.35 secs
  
 --> Reading design: AudioProcessor.prj
 
@@ -108,6 +108,10 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
+Analyzing Verilog file "E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\FIFO.v" into library work
+Parsing module <FIFO>.
+Analyzing Verilog file "E:\OneDrive\Documents\ComputerDesign1\FrameSizeDecoder.v" into library work
+Parsing module <FrameSizeDecoder>.
 Analyzing Verilog file "E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\PrgmMemory.v" into library work
 Parsing module <PrgmMemory>.
 Analyzing Verilog file "E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\FFT.v" into library work
@@ -153,7 +157,13 @@ Elaborating module <DAC>.
 WARNING:HDLCompiler:1499 - "E:\OneDrive\Documents\ComputerDesign1\DAC.v" Line 21: Empty module <DAC> remains a black box.
 
 Elaborating module <DataInputHandler>.
-WARNING:HDLCompiler:1499 - "E:\OneDrive\Documents\ComputerDesign1\DataInputHandler.v" Line 21: Empty module <DataInputHandler> remains a black box.
+
+Elaborating module <FIFO>.
+WARNING:HDLCompiler:1499 - "E:\OneDrive\Documents\ComputerDesign1\ipcore_dir\FIFO.v" Line 39: Empty module <FIFO> remains a black box.
+WARNING:HDLCompiler:1127 - "E:\OneDrive\Documents\ComputerDesign1\DataInputHandler.v" Line 43: Assignment to full ignored, since the identifier is never used
+
+Elaborating module <FrameSizeDecoder>.
+WARNING:HDLCompiler:413 - "E:\OneDrive\Documents\ComputerDesign1\FrameSizeDecoder.v" Line 33: Result of 12-bit expression is truncated to fit in 11-bit target.
 
 Elaborating module <ADC>.
 WARNING:HDLCompiler:1499 - "E:\OneDrive\Documents\ComputerDesign1\ADC.v" Line 21: Empty module <ADC> remains a black box.
@@ -186,7 +196,7 @@ Elaborating module <ControlSystem>.
 WARNING:HDLCompiler:1499 - "E:\OneDrive\Documents\ComputerDesign1\ControlSystem.v" Line 21: Empty module <ControlSystem> remains a black box.
 
 Elaborating module <Core>.
-WARNING:HDLCompiler:1499 - "E:\OneDrive\Documents\ComputerDesign1\Core.v" Line 40: Empty module <Core> remains a black box.
+WARNING:HDLCompiler:1499 - "E:\OneDrive\Documents\ComputerDesign1\Core.v" Line 53: Empty module <Core> remains a black box.
 WARNING:HDLCompiler:634 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" Line 55: Net <XLXN_29[15]> does not have a driver.
 WARNING:HDLCompiler:634 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" Line 71: Net <XLXN_194> does not have a driver.
 WARNING:HDLCompiler:634 - "E:\OneDrive\Documents\ComputerDesign1\AudioProcessor.vf" Line 72: Net <XLXN_195> does not have a driver.
@@ -223,10 +233,50 @@ WARNING:Xst:653 - Signal <XLXN_195> is used but never assigned. This sourceless 
 	no macro.
 Unit <AudioProcessor> synthesized.
 
+Synthesizing Unit <DataInputHandler>.
+    Related source file is "E:\OneDrive\Documents\ComputerDesign1\DataInputHandler.v".
+INFO:Xst:3210 - "E:\OneDrive\Documents\ComputerDesign1\DataInputHandler.v" line 43: Output port <full> of the instance <buffer> is unconnected or connected to loadless signal.
+    Register <readLastClock> equivalent to <readEnable> has been removed
+    Found 1-bit register for signal <writeEnable>.
+    Found 1-bit register for signal <readEnable>.
+    Found 1-bit register for signal <readDoubleClock>.
+    Found 11-bit register for signal <frameCounter>.
+    Found 1-bit register for signal <tLast>.
+    Found 16-bit register for signal <lastVal>.
+    Found 11-bit subtractor for signal <dFrameSize[10]_GND_4_o_sub_5_OUT> created at line 85.
+    Found 11-bit adder for signal <frameCounter[10]_GND_4_o_add_6_OUT> created at line 90.
+    Found 16-bit comparator equal for signal <n0002> created at line 58
+    Found 11-bit comparator equal for signal <frameCounter[10]_dFrameSize[10]_equal_6_o> created at line 85
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  31 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <DataInputHandler> synthesized.
+
+Synthesizing Unit <FrameSizeDecoder>.
+    Related source file is "E:\OneDrive\Documents\ComputerDesign1\FrameSizeDecoder.v".
+    Summary:
+	no macro.
+Unit <FrameSizeDecoder> synthesized.
+
 =========================================================================
 HDL Synthesis Report
 
-Found no macro
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 11-bit adder                                          : 1
+ 11-bit subtractor                                     : 1
+# Registers                                            : 6
+ 1-bit register                                        : 4
+ 11-bit register                                       : 1
+ 16-bit register                                       : 1
+# Comparators                                          : 2
+ 11-bit comparator equal                               : 1
+ 16-bit comparator equal                               : 1
+# Multiplexers                                         : 1
+ 1-bit 2-to-1 multiplexer                              : 1
+
 =========================================================================
 
 =========================================================================
@@ -237,15 +287,33 @@ Reading core <ipcore_dir/FFT.ngc>.
 Reading Secure Unit <blk00000001>.
 Reading core <ipcore_dir/DataMemory.ngc>.
 Reading core <ipcore_dir/PrgmMemory.ngc>.
+Reading core <ipcore_dir/FIFO.ngc>.
 Loading core <FFT> for timing and area information for instance <XLXI_1>.
 Loading core <FFT> for timing and area information for instance <XLXI_8>.
 Loading core <DataMemory> for timing and area information for instance <XLXI_24>.
 Loading core <PrgmMemory> for timing and area information for instance <XLXI_25>.
+Loading core <FIFO> for timing and area information for instance <buffer>.
+
+Synthesizing (advanced) Unit <DataInputHandler>.
+The following registers are absorbed into counter <frameCounter>: 1 register on signal <frameCounter>.
+Unit <DataInputHandler> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
-Found no macro
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 11-bit subtractor                                     : 1
+# Counters                                             : 1
+ 11-bit up counter                                     : 1
+# Registers                                            : 20
+ Flip-Flops                                            : 20
+# Comparators                                          : 2
+ 11-bit comparator equal                               : 1
+ 16-bit comparator equal                               : 1
+# Multiplexers                                         : 1
+ 1-bit 2-to-1 multiplexer                              : 1
+
 =========================================================================
 
 =========================================================================
@@ -254,20 +322,31 @@ Found no macro
 
 Optimizing unit <AudioProcessor> ...
 
+Optimizing unit <DataInputHandler> ...
+
 Mapping all equations...
 WARNING:Xst:2036 - Inserting OBUF on port <ADC_MOSI> driven by black box <ADC>. Possible simulation mismatch.
 WARNING:Xst:2036 - Inserting OBUF on port <ADC_SCK> driven by black box <ADC>. Possible simulation mismatch.
 WARNING:Xst:2036 - Inserting OBUF on port <DAC_MOSI> driven by black box <DAC>. Possible simulation mismatch.
 WARNING:Xst:2036 - Inserting OBUF on port <DAC_SCK> driven by black box <DAC>. Possible simulation mismatch.
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block AudioProcessor, actual ratio is 4.
+Found area constraint ratio of 100 (+ 5) on block AudioProcessor, actual ratio is 5.
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <XLXI_9/buffer> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <XLXI_9/buffer> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <XLXI_9/buffer> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <XLXI_9/buffer> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <XLXI_9/buffer> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <XLXI_9/buffer> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
 
 Final Macro Processing ...
 
 =========================================================================
 Final Register Report
 
-Found no macro
+Macro Statistics
+# Registers                                            : 31
+ Flip-Flops                                            : 31
+
 =========================================================================
 
 =========================================================================
@@ -289,30 +368,33 @@ Top Level Output File Name         : AudioProcessor.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 7437
-#      GND                         : 93
-#      INV                         : 318
-#      LUT1                        : 294
-#      LUT2                        : 638
-#      LUT3                        : 1282
-#      LUT4                        : 208
-#      LUT5                        : 146
-#      LUT6                        : 1336
+# BELS                             : 7540
+#      GND                         : 95
+#      INV                         : 321
+#      LUT1                        : 304
+#      LUT2                        : 650
+#      LUT3                        : 1302
+#      LUT4                        : 213
+#      LUT5                        : 149
+#      LUT6                        : 1355
 #      MULT_AND                    : 160
-#      MUXCY                       : 1420
+#      MUXCY                       : 1437
 #      MUXF7                       : 40
-#      VCC                         : 60
-#      XORCY                       : 1442
-# FlipFlops/Latches                : 5778
-#      FD                          : 262
+#      VCC                         : 61
+#      XORCY                       : 1453
+# FlipFlops/Latches                : 5840
+#      FD                          : 287
+#      FDC                         : 1
+#      FDCE                        : 14
 #      FDE                         : 3176
+#      FDP                         : 12
 #      FDR                         : 14
-#      FDRE                        : 2252
+#      FDRE                        : 2262
 #      FDS                         : 34
 #      FDSE                        : 40
-# RAMS                             : 22
+# RAMS                             : 23
 #      RAMB16BWER                  : 16
-#      RAMB8BWER                   : 6
+#      RAMB8BWER                   : 7
 # Shift Registers                  : 1148
 #      SRL16E                      : 468
 #      SRLC16E                     : 600
@@ -324,13 +406,12 @@ Primitive and Black Box Usage:
 #      OBUF                        : 4
 # DSPs                             : 18
 #      DSP48A1                     : 18
-# Others                           : 11
+# Others                           : 10
 #      ADC                         : 1
 #      ControlSystem               : 1
 #      Core                        : 1
 #      DAC                         : 1
 #      DataArbitrationUnit         : 1
-#      DataInputHandler            : 1
 #      FFTConfigDriver             : 1
 #      FFTDataOutputHandler        : 1
 #      IFFTConfigDriver            : 1
@@ -344,26 +425,26 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            5778  out of  18224    31%  
- Number of Slice LUTs:                 5370  out of   9112    58%  
-    Number used as Logic:              4222  out of   9112    46%  
+ Number of Slice Registers:            5840  out of  18224    32%  
+ Number of Slice LUTs:                 5442  out of   9112    59%  
+    Number used as Logic:              4294  out of   9112    47%  
     Number used as Memory:             1148  out of   2176    52%  
        Number used as SRL:             1148
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   7996
-   Number with an unused Flip Flop:    2218  out of   7996    27%  
-   Number with an unused LUT:          2626  out of   7996    32%  
-   Number of fully used LUT-FF pairs:  3152  out of   7996    39%  
-   Number of unique control sets:         0
+ Number of LUT Flip Flop pairs used:   8091
+   Number with an unused Flip Flop:    2251  out of   8091    27%  
+   Number with an unused LUT:          2649  out of   8091    32%  
+   Number of fully used LUT-FF pairs:  3191  out of   8091    39%  
+   Number of unique control sets:        10
 
 IO Utilization: 
  Number of IOs:                           7
  Number of bonded IOBs:                   7  out of    232     3%  
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:               19  out of     32    59%  
-    Number using Block RAM only:         19
+ Number of Block RAM/FIFO:               20  out of     32    62%  
+    Number using Block RAM only:         20
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
  Number of DSP48A1s:                     18  out of     32    56%  
 
@@ -388,7 +469,7 @@ Clock Information:
 -----------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                                                                                            | Load  |
 -----------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------+
-CLK                                | IBUF+BUFG                                                                                                                        | 6966  |
+CLK                                | IBUF+BUFG                                                                                                                        | 7029  |
 XLXI_25/N1                         | NONE(XLXI_25/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)| 4     |
 -----------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -402,7 +483,7 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: 5.619ns (Maximum Frequency: 177.967MHz)
-   Minimum input arrival time before clock: 2.764ns
+   Minimum input arrival time before clock: 4.942ns
    Maximum output required time after clock: 1.850ns
    Maximum combinational path delay: 3.150ns
 
@@ -413,7 +494,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
   Clock period: 5.619ns (frequency: 177.967MHz)
-  Total number of paths / destination ports: 66358 / 16388
+  Total number of paths / destination ports: 67231 / 16533
 -------------------------------------------------------------------------
 Delay:               5.619ns (Levels of Logic = 3)
   Source:            sec_inst (FF)
@@ -434,29 +515,28 @@ Delay:               5.619ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 288 / 268
+  Total number of paths / destination ports: 725 / 290
 -------------------------------------------------------------------------
-Offset:              2.764ns (Levels of Logic = 3)
-  Source:            XLXI_13:tReady (PAD)
-  Destination:       sec_inst (FF)
+Offset:              4.942ns (Levels of Logic = 3)
+  Source:            CLK (PAD)
+  Destination:       XLXI_9/frameCounter_10 (FF)
   Destination Clock: CLK rising
 
-  Data Path: XLXI_13:tReady to sec_inst
+  Data Path: CLK to XLXI_9/frameCounter_10
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-    IFFTDataOutputHandler:tReady    9   0.000   0.000  XLXI_13 (XLXN_28)
-     begin scope: 'XLXI_8:m_axis_data_tready'
-     begin scope: 'XLXI_8/blk00000001:m_axis_data_tready'
-     SEC:in->out          33   0.203   1.305  sec_inst (sec_net)
-     SEC:in                    0.322          sec_inst
+     IBUF:I->O             2   1.222   0.845  CLK_IBUF (CLK_IBUF)
+     LUT3:I0->O           13   0.205   1.180  XLXI_9/_n003721 (XLXI_9/_n00372)
+     LUT6:I2->O           10   0.203   0.856  XLXI_9/_n00378 (XLXI_9/_n0037)
+     FDRE:R                    0.430          XLXI_9/frameCounter_1
     ----------------------------------------
-    Total                      2.764ns (1.459ns logic, 1.305ns route)
-                                       (52.8% logic, 47.2% route)
+    Total                      4.942ns (2.060ns logic, 2.882ns route)
+                                       (41.7% logic, 58.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 120 / 120
+  Total number of paths / destination ports: 119 / 119
 -------------------------------------------------------------------------
 Offset:              1.850ns (Levels of Logic = 1)
   Source:            XLXI_24/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram (RAM)
@@ -476,7 +556,7 @@ Offset:              1.850ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 207 / 207
+  Total number of paths / destination ports: 186 / 186
 -------------------------------------------------------------------------
 Delay:               3.150ns (Levels of Logic = 1)
   Source:            XLXI_10:MOSI (PAD)
@@ -508,14 +588,14 @@ CLK            |    5.619|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 55.00 secs
-Total CPU time to Xst completion: 55.10 secs
+Total REAL time to Xst completion: 72.00 secs
+Total CPU time to Xst completion: 71.97 secs
  
 --> 
 
-Total memory usage is 379940 kilobytes
+Total memory usage is 368316 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   29 (   0 filtered)
-Number of infos    :   16 (   0 filtered)
+Number of warnings :   31 (   0 filtered)
+Number of infos    :   23 (   0 filtered)
 

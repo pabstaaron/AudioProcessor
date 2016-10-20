@@ -1,0 +1,10 @@
+Command line:
+   DIHTester_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  3469
+
+Thu Oct 20 15:33:33 2016
+
+
+ Elaboration Time: 0.125 sec

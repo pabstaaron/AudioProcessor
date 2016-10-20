@@ -32,8 +32,8 @@
 // The core may request that an entire frame of data be streamed to it. In this mode, the core should specify the starting location
 // of the frame. The data on that frame will be streamed continously to the core until the end of the frame is reached. The core will receive
 // a value in the frame, begin operating on it, and then send that value back to memory. The instrComplete flag should be raised for one clock 
-// cycle to indicate that a value has gone through the processing stage. This process should be pipelined as it will be the most frequently
-// used mode of the processor. 
+// cycle to indicate that a value has gone through the processing stage. The ready input will be raised for one cycle when the next value is ready.
+//  This process should be pipelined as it will be the most frequently used mode of the processor. 
 // 
 // Revision Code Specification:
 // 	0.1 - Add, sub, shift, and load/store ops implemented, stream mode need not be implemented

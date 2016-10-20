@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="E:/OneDrive/Documents/ComputerDesign1/DIHTester_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="DIHTester" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/DIHTester/tData" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DIHTester/tValid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tValid</obj_property>
+      <obj_property name="ObjectShortName">tValid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DIHTester/tLast" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tLast</obj_property>
+      <obj_property name="ObjectShortName">tLast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DIHTester/tReady" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tReady</obj_property>
+      <obj_property name="ObjectShortName">tReady</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DIHTester/CLK" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DIHTester/value" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">value[15:0]</obj_property>
+      <obj_property name="ObjectShortName">value[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DIHTester/frameSize" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">frameSize[3:0]</obj_property>
+      <obj_property name="ObjectShortName">frameSize[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DIHTester/i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DIHTester/uut/readDoubleClock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">readDoubleClock</obj_property>
+      <obj_property name="ObjectShortName">readDoubleClock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DIHTester/uut/readLastClock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">readLastClock</obj_property>
+      <obj_property name="ObjectShortName">readLastClock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DIHTester/uut/writeEnable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">writeEnable</obj_property>
+      <obj_property name="ObjectShortName">writeEnable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DIHTester/uut/readEnable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">readEnable</obj_property>
+      <obj_property name="ObjectShortName">readEnable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DIHTester/uut/empty" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">empty</obj_property>
+      <obj_property name="ObjectShortName">empty</obj_property>
+   </wvobject>
+</wave_config>
