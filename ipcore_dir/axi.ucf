@@ -1,2 +1,0 @@
-INST "*/axi_interconnect_inst/*clock_conv_inst/*_resync*" TNM = FFS "axi_reset_resync";
-TIMESPEC "TS_axi_reset_resync" = TO "axi_reset_resync" TIG;
