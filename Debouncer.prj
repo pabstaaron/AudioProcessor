@@ -1,0 +1,2 @@
+verilog work "ClockCounter.v"
+verilog work "Debouncer.v"

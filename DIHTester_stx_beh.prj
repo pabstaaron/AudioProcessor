@@ -1,0 +1,4 @@
+verilog isim_temp "FrameSizeDecoder.v"
+verilog isim_temp "DataInputHandler.v"
+verilog isim_temp "DIHTester.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

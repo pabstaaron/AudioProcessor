@@ -1,0 +1,5 @@
+verilog work "ClockCounter.v"
+verilog work "Debouncer.v"
+verilog work "ButtonCounter.v"
+verilog work "CounterTester.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,560 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.29 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.29 secs
+ 
+--> Reading design: Counter.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Counter.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Counter"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : Counter
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\OneDrive\Documents\ComputerDesign1 - Copy\ButtonCounter.v" into library work
+Parsing module <Counter>.
+Parsing module <SevenSegment>.
+Parsing module <ClockDivider>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Counter>.
+
+Elaborating module <SevenSegment>.
+
+Elaborating module <ClockDivider>.
+WARNING:HDLCompiler:413 - "E:\OneDrive\Documents\ComputerDesign1 - Copy\ButtonCounter.v" Line 199: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "E:\OneDrive\Documents\ComputerDesign1 - Copy\ButtonCounter.v" Line 44: Result of 18-bit expression is truncated to fit in 17-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Counter>.
+    Related source file is "E:\OneDrive\Documents\ComputerDesign1 - Copy\ButtonCounter.v".
+        width = 16
+    Found 17-bit register for signal <count>.
+    Found 1-bit register for signal <state>.
+    Found 17-bit adder for signal <count[16]_GND_1_o_add_3_OUT> created at line 44.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  18 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <Counter> synthesized.
+
+Synthesizing Unit <SevenSegment>.
+    Related source file is "E:\OneDrive\Documents\ComputerDesign1 - Copy\ButtonCounter.v".
+        width = 3
+WARNING:Xst:647 - Input <BCD<16:16>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <an1>.
+    Found 1-bit register for signal <an2>.
+    Found 1-bit register for signal <an3>.
+    Found 3-bit register for signal <pos>.
+    Found 1-bit register for signal <segG>.
+    Found 1-bit register for signal <segF>.
+    Found 1-bit register for signal <segE>.
+    Found 1-bit register for signal <segD>.
+    Found 1-bit register for signal <segC>.
+    Found 1-bit register for signal <segB>.
+    Found 1-bit register for signal <segA>.
+    Found 1-bit register for signal <an0>.
+    Found 3-bit adder for signal <pos[2]_GND_2_o_add_11_OUT> created at line 199.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0124> created at line 93.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0126> created at line 93.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0128> created at line 93.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0130> created at line 93.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0132> created at line 93.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0134> created at line 93.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0136> created at line 93.
+    Found 3-bit comparator greater for signal <n0017> created at line 200
+    WARNING:Xst:2404 -  FFs/Latches <segDp<0:0>> (without init value) have a constant value of 0 in block <SevenSegment>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  14 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  10 Multiplexer(s).
+Unit <SevenSegment> synthesized.
+
+Synthesizing Unit <ClockDivider>.
+    Related source file is "E:\OneDrive\Documents\ComputerDesign1 - Copy\ButtonCounter.v".
+        freq = 100000000
+        cycles = 100000
+        width = 32
+    Found 1-bit register for signal <scaledClk>.
+    Found 33-bit register for signal <count>.
+    Found 33-bit adder for signal <count[32]_GND_3_o_add_1_OUT> created at line 222.
+    Found 33-bit comparator greater for signal <n0001> created at line 223
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  34 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <ClockDivider> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 17-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 33-bit adder                                          : 1
+# Registers                                            : 16
+ 1-bit register                                        : 13
+ 17-bit register                                       : 1
+ 3-bit register                                        : 1
+ 33-bit register                                       : 1
+# Comparators                                          : 2
+ 3-bit comparator greater                              : 1
+ 33-bit comparator greater                             : 1
+# Multiplexers                                         : 11
+ 1-bit 2-to-1 multiplexer                              : 4
+ 1-bit 4-to-1 multiplexer                              : 7
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <ClockDivider>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <ClockDivider> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Counter>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <Counter> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SevenSegment>.
+The following registers are absorbed into counter <pos>: 1 register on signal <pos>.
+Unit <SevenSegment> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 3-bit adder                                           : 1
+ 33-bit adder                                          : 1
+# Counters                                             : 3
+ 17-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 33-bit up counter                                     : 1
+# Registers                                            : 13
+ Flip-Flops                                            : 13
+# Comparators                                          : 2
+ 3-bit comparator greater                              : 1
+ 33-bit comparator greater                             : 1
+# Multiplexers                                         : 10
+ 1-bit 2-to-1 multiplexer                              : 3
+ 1-bit 4-to-1 multiplexer                              : 7
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Counter> ...
+
+Optimizing unit <SevenSegment> ...
+WARNING:Xst:2677 - Node <count_16> of sequential type is unconnected in block <Counter>.
+WARNING:Xst:1293 - FF/Latch <seg/pos_2> has a constant value of 0 in block <Counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg/cd/count_17> has a constant value of 0 in block <Counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg/cd/count_18> has a constant value of 0 in block <Counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg/cd/count_19> has a constant value of 0 in block <Counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg/cd/count_20> has a constant value of 0 in block <Counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg/cd/count_21> has a constant value of 0 in block <Counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg/cd/count_22> has a constant value of 0 in block <Counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg/cd/count_23> has a constant value of 0 in block <Counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg/cd/count_24> has a constant value of 0 in block <Counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg/cd/count_25> has a constant value of 0 in block <Counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg/cd/count_26> has a constant value of 0 in block <Counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg/cd/count_27> has a constant value of 0 in block <Counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg/cd/count_28> has a constant value of 0 in block <Counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg/cd/count_29> has a constant value of 0 in block <Counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg/cd/count_30> has a constant value of 0 in block <Counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg/cd/count_31> has a constant value of 0 in block <Counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg/cd/count_32> has a constant value of 0 in block <Counter>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Counter, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 48
+ Flip-Flops                                            : 48
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Counter.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 229
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 47
+#      LUT2                        : 25
+#      LUT3                        : 3
+#      LUT4                        : 9
+#      LUT5                        : 16
+#      LUT6                        : 20
+#      MUXCY                       : 54
+#      MUXF7                       : 2
+#      VCC                         : 1
+#      XORCY                       : 46
+# FlipFlops/Latches                : 48
+#      FD                          : 28
+#      FDC                         : 1
+#      FDCE                        : 16
+#      FDE                         : 1
+#      FDR                         : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 15
+#      IBUF                        : 2
+#      OBUF                        : 13
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              48  out of  18224     0%  
+ Number of Slice LUTs:                  125  out of   9112     1%  
+    Number used as Logic:               125  out of   9112     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    125
+   Number with an unused Flip Flop:      77  out of    125    61%  
+   Number with an unused LUT:             0  out of    125     0%  
+   Number of fully used LUT-FF pairs:    48  out of    125    38%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                          16
+ Number of bonded IOBs:                  16  out of    232     6%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 35    |
+seg/cd/scaledClk                   | NONE(seg/pos_1)        | 13    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.833ns (Maximum Frequency: 206.894MHz)
+   Minimum input arrival time before clock: 3.370ns
+   Maximum output required time after clock: 3.999ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.833ns (frequency: 206.894MHz)
+  Total number of paths / destination ports: 4986 / 51
+-------------------------------------------------------------------------
+Delay:               4.833ns (Levels of Logic = 19)
+  Source:            seg/cd/count_0 (FF)
+  Destination:       seg/cd/scaledClk (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: seg/cd/count_0 to seg/cd/scaledClk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.616  seg/cd/count_0 (seg/cd/count_0)
+     INV:I->O              1   0.206   0.000  seg/cd/Madd_count[32]_GND_3_o_add_1_OUT_lut<0>_INV_0 (seg/cd/Madd_count[32]_GND_3_o_add_1_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  seg/cd/Madd_count[32]_GND_3_o_add_1_OUT_cy<0> (seg/cd/Madd_count[32]_GND_3_o_add_1_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  seg/cd/Madd_count[32]_GND_3_o_add_1_OUT_cy<1> (seg/cd/Madd_count[32]_GND_3_o_add_1_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  seg/cd/Madd_count[32]_GND_3_o_add_1_OUT_cy<2> (seg/cd/Madd_count[32]_GND_3_o_add_1_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  seg/cd/Madd_count[32]_GND_3_o_add_1_OUT_cy<3> (seg/cd/Madd_count[32]_GND_3_o_add_1_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  seg/cd/Madd_count[32]_GND_3_o_add_1_OUT_cy<4> (seg/cd/Madd_count[32]_GND_3_o_add_1_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  seg/cd/Madd_count[32]_GND_3_o_add_1_OUT_cy<5> (seg/cd/Madd_count[32]_GND_3_o_add_1_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  seg/cd/Madd_count[32]_GND_3_o_add_1_OUT_cy<6> (seg/cd/Madd_count[32]_GND_3_o_add_1_OUT_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  seg/cd/Madd_count[32]_GND_3_o_add_1_OUT_cy<7> (seg/cd/Madd_count[32]_GND_3_o_add_1_OUT_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  seg/cd/Madd_count[32]_GND_3_o_add_1_OUT_cy<8> (seg/cd/Madd_count[32]_GND_3_o_add_1_OUT_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  seg/cd/Madd_count[32]_GND_3_o_add_1_OUT_cy<9> (seg/cd/Madd_count[32]_GND_3_o_add_1_OUT_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  seg/cd/Madd_count[32]_GND_3_o_add_1_OUT_cy<10> (seg/cd/Madd_count[32]_GND_3_o_add_1_OUT_cy<10>)
+     XORCY:CI->O           2   0.180   0.961  seg/cd/Madd_count[32]_GND_3_o_add_1_OUT_xor<11> (seg/cd/count[32]_GND_3_o_add_1_OUT<11>)
+     LUT5:I0->O            1   0.203   0.000  seg/cd/Mcompar_n0001_lut<1> (seg/cd/Mcompar_n0001_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  seg/cd/Mcompar_n0001_cy<1> (seg/cd/Mcompar_n0001_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  seg/cd/Mcompar_n0001_cy<2> (seg/cd/Mcompar_n0001_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  seg/cd/Mcompar_n0001_cy<3> (seg/cd/Mcompar_n0001_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  seg/cd/Mcompar_n0001_cy<4> (seg/cd/Mcompar_n0001_cy<4>)
+     MUXCY:CI->O          18   0.258   1.049  seg/cd/Mcompar_n0001_cy<5> (seg/cd/Mcompar_n0001_cy<5>)
+     FDE:CE                    0.322          seg/cd/scaledClk
+    ----------------------------------------
+    Total                      4.833ns (2.207ns logic, 2.626ns route)
+                                       (45.7% logic, 54.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'seg/cd/scaledClk'
+  Clock period: 3.798ns (frequency: 263.302MHz)
+  Total number of paths / destination ports: 93 / 15
+-------------------------------------------------------------------------
+Delay:               3.798ns (Levels of Logic = 3)
+  Source:            seg/pos_0 (FF)
+  Destination:       seg/segA (FF)
+  Source Clock:      seg/cd/scaledClk rising
+  Destination Clock: seg/cd/scaledClk rising
+
+  Data Path: seg/pos_0 to seg/segA
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             35   0.447   1.335  seg/pos_0 (seg/pos_0)
+     LUT5:I4->O            1   0.205   0.580  seg/BCD[3]_BCD[15]_mux_10_OUT<7><7>3_SW0 (N3)
+     LUT5:I4->O            2   0.205   0.721  seg/BCD[3]_BCD[15]_mux_10_OUT<7><7>3 (seg/BCD[3]_BCD[15]_mux_10_OUT<7><7>3)
+     LUT4:I2->O            1   0.203   0.000  seg/BCD[3]_BCD[15]_mux_10_OUT<5><5>5 (seg/BCD[3]_BCD[15]_mux_10_OUT<5>)
+     FD:D                      0.102          seg/segC
+    ----------------------------------------
+    Total                      3.798ns (1.162ns logic, 2.636ns route)
+                                       (30.6% logic, 69.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 34 / 34
+-------------------------------------------------------------------------
+Offset:              3.370ns (Levels of Logic = 2)
+  Source:            in (PAD)
+  Destination:       count_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: in to count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.617  in_IBUF (in_IBUF)
+     LUT2:I1->O           16   0.205   1.004  GND_1_o_GND_1_o_AND_1_o1 (GND_1_o_GND_1_o_AND_1_o)
+     FDCE:CE                   0.322          count_0
+    ----------------------------------------
+    Total                      3.370ns (1.749ns logic, 1.621ns route)
+                                       (51.9% logic, 48.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'seg/cd/scaledClk'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            seg/segA (FF)
+  Destination:       segA (PAD)
+  Source Clock:      seg/cd/scaledClk rising
+
+  Data Path: seg/segA to segA
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.579  seg/segA (seg/segA)
+     OBUF:I->O                 2.571          segA_OBUF (segA)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.999ns (Levels of Logic = 1)
+  Source:            seg/cd/scaledClk (FF)
+  Destination:       scaledClk (PAD)
+  Source Clock:      clk rising
+
+  Data Path: seg/cd/scaledClk to scaledClk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             15   0.447   0.981  seg/cd/scaledClk (seg/cd/scaledClk)
+     OBUF:I->O                 2.571          scaledClk_OBUF (scaledClk)
+    ----------------------------------------
+    Total                      3.999ns (3.018ns logic, 0.981ns route)
+                                       (75.5% logic, 24.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.833|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock seg/cd/scaledClk
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+clk             |    3.723|         |         |         |
+seg/cd/scaledClk|    3.798|         |         |         |
+----------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 17.00 secs
+Total CPU time to Xst completion: 17.41 secs
+ 
+--> 
+
+Total memory usage is 283180 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   22 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

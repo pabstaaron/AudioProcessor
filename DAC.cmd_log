@@ -1,0 +1,8 @@
+vhdtdtfi -lib work E:/OneDrive/Documents/ComputerDesign1/DAC.v -lang verilog -prj ComputerDesign1 -o DAC.spl -module DAC -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 DAC.spl E:/OneDrive/Documents/ComputerDesign1/DAC.sym 
+vhdtdtfi -lib work E:/Documents/AudioProcessor/AudioProcessor/DAC.v -lang verilog -prj ComputerDesign1 -o DAC.spl -module DAC -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 DAC.spl E:/Documents/AudioProcessor/AudioProcessor/DAC.sym 
+vhdtdtfi -lib work E:/Documents/AudioProcessor/AudioProcessor/DAC.v -lang verilog -prj ComputerDesign1 -o DAC.spl -module DAC -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 DAC.spl E:/Documents/AudioProcessor/AudioProcessor/DAC.sym 
+vhdtdtfi -lib work E:/Documents/AudioProcessor/AudioProcessor/DAC.v -lang verilog -prj ComputerDesign1 -o DAC.spl -module DAC -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 DAC.spl E:/Documents/AudioProcessor/AudioProcessor/DAC.sym 
