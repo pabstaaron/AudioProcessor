@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=E:\OneDrive\Documents\ComputerDesign1\VGAController.ncd
-OUTFILE=E:\OneDrive\Documents\ComputerDesign1\VGAController.bit
-FAMILY=Spartan6
-PART=xc6slx16-3csg324
-WORKINGDIR=E:\OneDrive\Documents\ComputerDesign1
-LICENSE=WebPack
-USER_INFO=211146977_0_0_752

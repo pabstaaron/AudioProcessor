@@ -1,5 +1,0 @@
-verilog work "ipcore_dir/FIFO.v"
-verilog work "FrameSizeDecoder.v"
-verilog work "DataInputHandler.v"
-verilog work "DIHTester.v"
-verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

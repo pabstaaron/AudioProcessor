@@ -1,8 +1,0 @@
-vhdtdtfi -lib work E:/OneDrive/Documents/ComputerDesign1/IFFTDataInputHandler.v -lang verilog -prj ComputerDesign1 -o IFFTDataInputHandler.spl -module IFFTDataInputHandler -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan6 IFFTDataInputHandler.spl E:/OneDrive/Documents/ComputerDesign1/IFFTDataInputHandler.sym 
-vhdtdtfi -lib work E:/OneDrive/Documents/ComputerDesign1/IFFTDataInputHandler.v -lang verilog -prj ComputerDesign1 -o IFFTDataInputHandler.spl -module IFFTDataInputHandler -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan6 IFFTDataInputHandler.spl E:/OneDrive/Documents/ComputerDesign1/IFFTDataInputHandler.sym 
-vhdtdtfi -lib work E:/OneDrive/Documents/ComputerDesign1/IFFTDataInputHandler.v -lang verilog -prj ComputerDesign1 -o IFFTDataInputHandler.spl -module IFFTDataInputHandler -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan6 IFFTDataInputHandler.spl E:/OneDrive/Documents/ComputerDesign1/IFFTDataInputHandler.sym 
-vhdtdtfi -lib work E:/OneDrive/Documents/ComputerDesign1/IFFTDataInputHandler.v -lang verilog -prj ComputerDesign1 -o IFFTDataInputHandler.spl -module IFFTDataInputHandler -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan6 IFFTDataInputHandler.spl E:/OneDrive/Documents/ComputerDesign1/IFFTDataInputHandler.sym 
